@@ -13,5 +13,6 @@ struct Widgets: WidgetBundle {
 	var body: some Widget {
 		SmallImageWidget()
 		MediumImageWidget()
+		LargeImageWidget()
 	}
 }

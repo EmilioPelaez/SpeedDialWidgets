@@ -15,6 +15,8 @@
 		C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */; };
 		C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */; };
 		C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */; };
+		C837D08125BA3D6A00FB1D48 /* LargeImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08025BA3D6A00FB1D48 /* LargeImageWidget.swift */; };
+		C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
 		C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* ContentView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumImageWidgetView.swift; sourceTree = "<group>"; };
 		C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
+		C837D08025BA3D6A00FB1D48 /* LargeImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageWidget.swift; sourceTree = "<group>"; };
+		C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageWidgetView.swift; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
 		C84B9D4425BA1A32003DF4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */,
 				C837D06925BA3B6800FB1D48 /* MediumImageWidget.swift */,
 				C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */,
+				C837D08025BA3D6A00FB1D48 /* LargeImageWidget.swift */,
+				C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 			files = (
 				C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */,
+				C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */,
 				C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
 				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
@@ -367,6 +374,7 @@
 				C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */,
 				C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */,
 				C837D06A25BA3B6800FB1D48 /* MediumImageWidget.swift in Sources */,
+				C837D08125BA3D6A00FB1D48 /* LargeImageWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
