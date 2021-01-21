@@ -10,6 +10,8 @@ import WidgetKit
 import Contacts
 
 struct WidgetProvider: IntentTimelineProvider {
+	let imageSize: CGFloat
+	
 	func placeholder(in context: Context) -> WidgetEntry {
 		.example
 	}
@@ -41,10 +43,9 @@ struct WidgetProvider: IntentTimelineProvider {
 			let predicate: NSPredicate = CNContact.predicateForContacts(withIdentifiers: [identifier])
 			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
 			guard let contact = contacts.first else { return nil }
-			print(contact.imageData)
 			return contact.imageData
 				.flatMap(UIImage.init)?
-				.resized(toFit: CGSize(side: 200))
+				.resized(toFit: CGSize(side: imageSize))
 				.map(Image.init)
 		} catch {
 			print(error)

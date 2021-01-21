@@ -11,7 +11,7 @@ import Intents
 
 struct LargeImageWidget: Widget {
 	var body: some WidgetConfiguration {
-		IntentConfiguration(kind: String(describing: type(of: self)), intent: ConfigurationIntent.self, provider: WidgetProvider(), content: WidgetView.init)
+		IntentConfiguration(kind: String(describing: type(of: self)), intent: ConfigurationIntent.self, provider: WidgetProvider(imageSize: 160), content: WidgetView.init)
 			.configurationDisplayName("Large Image")
 			.description("")
 			.supportedFamilies([.systemSmall])
