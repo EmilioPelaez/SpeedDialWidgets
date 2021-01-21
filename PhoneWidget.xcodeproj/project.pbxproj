@@ -11,6 +11,10 @@
 		C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D03825BA332100FB1D48 /* SmallImageWidget.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
 		C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
+		C837D06A25BA3B6800FB1D48 /* MediumImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D06925BA3B6800FB1D48 /* MediumImageWidget.swift */; };
+		C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */; };
+		C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */; };
+		C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
 		C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* ContentView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
@@ -66,6 +70,10 @@
 		C837D03825BA332100FB1D48 /* SmallImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidget.swift; sourceTree = "<group>"; };
 		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
 		C837D05E25BA376200FB1D48 /* Connection+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+UI.swift"; sourceTree = "<group>"; };
+		C837D06925BA3B6800FB1D48 /* MediumImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumImageWidget.swift; sourceTree = "<group>"; };
+		C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumImageWidgetView.swift; sourceTree = "<group>"; };
+		C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
 		C84B9D4425BA1A32003DF4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +127,8 @@
 			children = (
 				C837D03825BA332100FB1D48 /* SmallImageWidget.swift */,
 				C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */,
+				C837D06925BA3B6800FB1D48 /* MediumImageWidget.swift */,
+				C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -187,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				C84B9D6525BA22BD003DF4A7 /* Widgets.swift */,
+				C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */,
+				C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */,
 				C837D03625BA330300FB1D48 /* Widgets */,
 				C837D03725BA330B00FB1D48 /* Utilities */,
 				C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */,
@@ -346,11 +358,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
+				C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */,
 				C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
 				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
 				C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */,
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,
+				C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */,
+				C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */,
+				C837D06A25BA3B6800FB1D48 /* MediumImageWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

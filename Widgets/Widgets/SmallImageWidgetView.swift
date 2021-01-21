@@ -10,7 +10,7 @@ import WidgetKit
 
 extension SmallImageWidget {
 	struct WidgetView : View {
-		var entry: Entry
+		var entry: WidgetEntry
 		
 		var body: some View {
 			ZStack {
@@ -52,7 +52,7 @@ extension SmallImageWidget {
 
 
 
-struct Widgets_Previews: PreviewProvider {
+struct SmallImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
 		SmallImageWidget.WidgetView(entry: .example)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
