@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */; };
+		C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */; };
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
 		C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D03825BA332100FB1D48 /* SmallImageWidget.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Utilities.swift"; sourceTree = "<group>"; };
 		C837D02425BA31DF00FB1D48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C837D03825BA332100FB1D48 /* SmallImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidget.swift; sourceTree = "<group>"; };
 		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				C837D02425BA31DF00FB1D48 /* Background.swift */,
 				C837D05E25BA376200FB1D48 /* Connection+UI.swift */,
+				C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */,
+				C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -218,8 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */,
-				C84B9D8A25BA24BB003DF4A7 /* Info.plist */,
 				C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */,
+				C84B9D8A25BA24BB003DF4A7 /* Info.plist */,
 			);
 			path = IntentHandler;
 			sourceTree = "<group>";
@@ -243,6 +249,8 @@
 				C84B9D8C25BA24BB003DF4A7 /* PBXTargetDependency */,
 			);
 			name = PhoneWidget;
+			packageProductDependencies = (
+			);
 			productName = PhoneWidget;
 			productReference = C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +318,8 @@
 				Base,
 			);
 			mainGroup = C84B9D3625BA1A32003DF4A7;
+			packageReferences = (
+			);
 			productRefGroup = C84B9D4025BA1A32003DF4A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +378,8 @@
 				C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */,
 				C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
+				C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */,
+				C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */,
 				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
 				C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */,
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,

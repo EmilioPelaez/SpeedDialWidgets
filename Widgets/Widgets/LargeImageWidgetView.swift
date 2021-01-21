@@ -15,9 +15,11 @@ extension LargeImageWidget {
 		var body: some View {
 			ZStack {
 				LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
-				entry.image?
-					.resizable()
-					.aspectRatio(contentMode: .fill)
+					.overlay(
+						entry.image?
+							.resizable()
+							.aspectRatio(contentMode: .fill)
+					)
 				VStack {
 					Spacer()
 					VStack(spacing: 2) {
