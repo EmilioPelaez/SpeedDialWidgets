@@ -10,6 +10,7 @@
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
 		C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D03825BA332100FB1D48 /* SmallImageWidget.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
+		C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
 		C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* ContentView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		C837D02425BA31DF00FB1D48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C837D03825BA332100FB1D48 /* SmallImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidget.swift; sourceTree = "<group>"; };
 		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
+		C837D05E25BA376200FB1D48 /* Connection+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+UI.swift"; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
 		C84B9D4425BA1A32003DF4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C837D02425BA31DF00FB1D48 /* Background.swift */,
+				C837D05E25BA376200FB1D48 /* Connection+UI.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
+				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
 				C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */,
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,
 			);

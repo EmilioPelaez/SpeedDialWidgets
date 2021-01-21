@@ -26,7 +26,11 @@ extension SmallImageWidget {
 		let connection: Connection
 		let background: Background
 		
-		static let example = Entry(date: Date(), name: "Emilio Peláez", image: nil, connection: .phone, background: Background.all[7])
+		static let example = Entry(date: Date(),
+															 name: "Emilio Peláez",
+															 image: Image("Avatar"),
+															 connection: .phone,
+															 background: Background.all[7])
 	}
 }
 
@@ -37,7 +41,16 @@ extension SmallImageWidget {
 		}
 		
 		func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Entry) -> ()) {
-			let entry = Entry.example
+			guard let contact = configuration.contact, let address = configuration.address else {
+				let entry = Entry.example
+				return completion(entry)
+			}
+			
+			let entry = Entry(date: Date(),
+												name: contact.displayString,
+												image: nil,
+												connection: configuration.connection,
+												background: Background.all[configuration.color.rawValue])
 			completion(entry)
 		}
 		
