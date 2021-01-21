@@ -72,7 +72,7 @@
 			<array>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Red</string>
+					<string>Unknown</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Yp0yFf</string>
 					<key>INEnumValueName</key>
@@ -80,11 +80,21 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Orange</string>
+					<string>Red</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>anzjTY</string>
+					<string>dJt7YW</string>
 					<key>INEnumValueIndex</key>
 					<integer>1</integer>
+					<key>INEnumValueName</key>
+					<string>red</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Orange</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>pOEXTv</string>
+					<key>INEnumValueIndex</key>
+					<integer>2</integer>
 					<key>INEnumValueName</key>
 					<string>orange</string>
 				</dict>
@@ -92,9 +102,9 @@
 					<key>INEnumValueDisplayName</key>
 					<string>Yellow</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>qmvAI3</string>
+					<string>4uPUlr</string>
 					<key>INEnumValueIndex</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>INEnumValueName</key>
 					<string>yellow</string>
 				</dict>
@@ -102,9 +112,9 @@
 					<key>INEnumValueDisplayName</key>
 					<string>Green</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>DVp6D9</string>
+					<string>mIyPpz</string>
 					<key>INEnumValueIndex</key>
-					<integer>3</integer>
+					<integer>4</integer>
 					<key>INEnumValueName</key>
 					<string>green</string>
 				</dict>
@@ -112,29 +122,29 @@
 					<key>INEnumValueDisplayName</key>
 					<string>Blue</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>1mqGCB</string>
+					<string>lPJgav</string>
 					<key>INEnumValueIndex</key>
-					<integer>4</integer>
+					<integer>5</integer>
 					<key>INEnumValueName</key>
 					<string>blue</string>
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Pink</string>
+					<string>Purple</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>11WI0P</string>
+					<string>ihfzIN</string>
 					<key>INEnumValueIndex</key>
-					<integer>5</integer>
+					<integer>6</integer>
 					<key>INEnumValueName</key>
-					<string>pink</string>
+					<string>purple</string>
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
 					<string>Dark Gray</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>eWWEFF</string>
+					<string>zxaSCf</string>
 					<key>INEnumValueIndex</key>
-					<integer>6</integer>
+					<integer>7</integer>
 					<key>INEnumValueName</key>
 					<string>darkGray</string>
 				</dict>
@@ -142,9 +152,9 @@
 					<key>INEnumValueDisplayName</key>
 					<string>Light Gray</string>
 					<key>INEnumValueDisplayNameID</key>
-					<string>aY2jgl</string>
+					<string>lRIeRm</string>
 					<key>INEnumValueIndex</key>
-					<integer>7</integer>
+					<integer>8</integer>
 					<key>INEnumValueName</key>
 					<string>lightGray</string>
 				</dict>
