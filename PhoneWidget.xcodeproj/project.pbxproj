@@ -18,6 +18,11 @@
 		C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C84B9D8625BA24BB003DF4A7 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84B9D8525BA24BB003DF4A7 /* Intents.framework */; };
+		C84B9D8925BA24BB003DF4A7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */; };
+		C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
+		C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C84B9D5D25BA22BD003DF4A7;
 			remoteInfo = WidgetsExtension;
+		};
+		C84B9D8B25BA24BB003DF4A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84B9D3725BA1A32003DF4A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84B9D8325BA24BB003DF4A7;
+			remoteInfo = IntentHandler;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +50,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed App Extensions */,
+				C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +71,11 @@
 		C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widgets.intentdefinition; sourceTree = "<group>"; };
 		C84B9D6825BA22BE003DF4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84B9D6A25BA22BE003DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84B9D8525BA24BB003DF4A7 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C84B9D8A25BA24BB003DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C84B9D8125BA24BB003DF4A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84B9D8625BA24BB003DF4A7 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +111,7 @@
 			children = (
 				C84B9D4125BA1A32003DF4A7 /* PhoneWidget */,
 				C84B9D6425BA22BD003DF4A7 /* Widgets */,
+				C84B9D8725BA24BB003DF4A7 /* IntentHandler */,
 				C84B9D5F25BA22BD003DF4A7 /* Frameworks */,
 				C84B9D4025BA1A32003DF4A7 /* Products */,
 			);
@@ -95,6 +122,7 @@
 			children = (
 				C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */,
 				C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */,
+				C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +152,7 @@
 			children = (
 				C84B9D6025BA22BD003DF4A7 /* WidgetKit.framework */,
 				C84B9D6225BA22BD003DF4A7 /* SwiftUI.framework */,
+				C84B9D8525BA24BB003DF4A7 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +166,16 @@
 				C84B9D6A25BA22BE003DF4A7 /* Info.plist */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		C84B9D8725BA24BB003DF4A7 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */,
+				C84B9D8A25BA24BB003DF4A7 /* Info.plist */,
+				C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */,
+			);
+			path = IntentHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +194,7 @@
 			);
 			dependencies = (
 				C84B9D6E25BA22BE003DF4A7 /* PBXTargetDependency */,
+				C84B9D8C25BA24BB003DF4A7 /* PBXTargetDependency */,
 			);
 			name = PhoneWidget;
 			productName = PhoneWidget;
@@ -178,6 +218,23 @@
 			productReference = C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		C84B9D8325BA24BB003DF4A7 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84B9D8E25BA24BB003DF4A7 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				C84B9D8025BA24BB003DF4A7 /* Sources */,
+				C84B9D8125BA24BB003DF4A7 /* Frameworks */,
+				C84B9D8225BA24BB003DF4A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +248,9 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					C84B9D5D25BA22BD003DF4A7 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C84B9D8325BA24BB003DF4A7 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -210,6 +270,7 @@
 			targets = (
 				C84B9D3E25BA1A32003DF4A7 /* PhoneWidget */,
 				C84B9D5D25BA22BD003DF4A7 /* WidgetsExtension */,
+				C84B9D8325BA24BB003DF4A7 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84B9D6925BA22BE003DF4A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84B9D8225BA24BB003DF4A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +322,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C84B9D8025BA24BB003DF4A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */,
+				C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */,
+				C84B9D8925BA24BB003DF4A7 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -261,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = C84B9D5D25BA22BD003DF4A7 /* WidgetsExtension */;
 			targetProxy = C84B9D6D25BA22BE003DF4A7 /* PBXContainerItemProxy */;
+		};
+		C84B9D8C25BA24BB003DF4A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84B9D8325BA24BB003DF4A7 /* IntentHandler */;
+			targetProxy = C84B9D8B25BA24BB003DF4A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -469,6 +552,44 @@
 			};
 			name = Release;
 		};
+		C84B9D8F25BA24BB003DF4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FS696NSBK7;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiliopelaez.PhoneWidget.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C84B9D9025BA24BB003DF4A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FS696NSBK7;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiliopelaez.PhoneWidget.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +616,15 @@
 			buildConfigurations = (
 				C84B9D7125BA22BE003DF4A7 /* Debug */,
 				C84B9D7225BA22BE003DF4A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84B9D8E25BA24BB003DF4A7 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84B9D8F25BA24BB003DF4A7 /* Debug */,
+				C84B9D9025BA24BB003DF4A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
