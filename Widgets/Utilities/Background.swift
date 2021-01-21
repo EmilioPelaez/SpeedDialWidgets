@@ -16,4 +16,8 @@ struct Background {
 		.map { (Color($0), Color($1)) }
 		.map(Background.init)
 	
+	var gradient: Gradient {
+		Gradient(colors: [topColor, bottomColor])
+	}
+	
 }
