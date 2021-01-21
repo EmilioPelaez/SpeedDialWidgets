@@ -13,8 +13,9 @@ import Intents
 struct SmallImageWidget: Widget {
 	var body: some WidgetConfiguration {
 		IntentConfiguration(kind: String(describing: type(of: self)), intent: ConfigurationIntent.self, provider: Provider(), content: WidgetView.init)
-		.configurationDisplayName("My Widget")
-		.description("This is an example widget.")
+			.configurationDisplayName("Small Image")
+			.description("")
+			.supportedFamilies([.systemSmall])
 	}
 }
 
