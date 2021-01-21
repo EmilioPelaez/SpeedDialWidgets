@@ -11,8 +11,6 @@
 		C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* ContentView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
 		C84B9D4A25BA1A33003DF4A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4925BA1A33003DF4A7 /* Preview Assets.xcassets */; };
-		C84B9D4C25BA1A33003DF4A7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4B25BA1A33003DF4A7 /* Persistence.swift */; };
-		C84B9D4F25BA1A33003DF4A7 /* PhoneWidget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4D25BA1A33003DF4A7 /* PhoneWidget.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +19,6 @@
 		C84B9D4425BA1A32003DF4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84B9D4925BA1A33003DF4A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C84B9D4B25BA1A33003DF4A7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		C84B9D4E25BA1A33003DF4A7 /* PhoneWidget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhoneWidget.xcdatamodel; sourceTree = "<group>"; };
 		C84B9D5025BA1A33003DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,9 +55,7 @@
 				C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */,
 				C84B9D4425BA1A32003DF4A7 /* ContentView.swift */,
 				C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */,
-				C84B9D4B25BA1A33003DF4A7 /* Persistence.swift */,
 				C84B9D5025BA1A33003DF4A7 /* Info.plist */,
-				C84B9D4D25BA1A33003DF4A7 /* PhoneWidget.xcdatamodeld */,
 				C84B9D4825BA1A33003DF4A7 /* Preview Content */,
 			);
 			path = PhoneWidget;
@@ -144,9 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84B9D4C25BA1A33003DF4A7 /* Persistence.swift in Sources */,
 				C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */,
-				C84B9D4F25BA1A33003DF4A7 /* PhoneWidget.xcdatamodeld in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,19 +328,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C84B9D4D25BA1A33003DF4A7 /* PhoneWidget.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C84B9D4E25BA1A33003DF4A7 /* PhoneWidget.xcdatamodel */,
-			);
-			currentVersion = C84B9D4E25BA1A33003DF4A7 /* PhoneWidget.xcdatamodel */;
-			path = PhoneWidget.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C84B9D3725BA1A32003DF4A7 /* Project object */;
 }
