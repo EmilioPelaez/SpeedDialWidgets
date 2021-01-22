@@ -10,6 +10,8 @@
 		C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */; };
 		C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */; };
 		C82FDE1A25BA4DEA00B6D5D2 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE1925BA4DEA00B6D5D2 /* ConfigurationView.swift */; };
+		C82FDE1F25BA510C00B6D5D2 /* CNContact+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE1E25BA510C00B6D5D2 /* CNContact+Name.swift */; };
+		C82FDE2425BA52D700B6D5D2 /* String+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */; };
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
 		C837D04525BA350000FB1D48 /* SmallImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D03825BA332100FB1D48 /* SmallImageWidget.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
@@ -74,6 +76,8 @@
 		C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Utilities.swift"; sourceTree = "<group>"; };
 		C82FDE1925BA4DEA00B6D5D2 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		C82FDE1E25BA510C00B6D5D2 /* CNContact+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CNContact+Name.swift"; sourceTree = "<group>"; };
+		C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Nil.swift"; sourceTree = "<group>"; };
 		C837D02425BA31DF00FB1D48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C837D03825BA332100FB1D48 /* SmallImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidget.swift; sourceTree = "<group>"; };
 		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */,
 				C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */,
 				C84B9D8A25BA24BB003DF4A7 /* Info.plist */,
+				C82FDE1E25BA510C00B6D5D2 /* CNContact+Name.swift */,
+				C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */,
 			);
 			path = IntentHandler;
 			sourceTree = "<group>";
@@ -398,9 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82FDE1F25BA510C00B6D5D2 /* CNContact+Name.swift in Sources */,
 				C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */,
 				C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C84B9D8925BA24BB003DF4A7 /* IntentHandler.swift in Sources */,
+				C82FDE2425BA52D700B6D5D2 /* String+Nil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

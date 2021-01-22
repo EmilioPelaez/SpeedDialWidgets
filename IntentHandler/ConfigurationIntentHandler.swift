@@ -11,12 +11,16 @@ import Contacts
 class ConfigurationIntentHandler: NSObject, ConfigurationIntentHandling {
 	func provideContactOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<Contact>?, Error?) -> Void) {
 		do {
-			let keys = [CNContactGivenNameKey, CNContactFamilyNameKey].map { $0 as CNKeyDescriptor }
+			let keys = [CNContactGivenNameKey, CNContactMiddleNameKey, CNContactFamilyNameKey, CNContactNicknameKey, CNContactTypeKey, CNContactOrganizationNameKey]
+				.map { $0 as CNKeyDescriptor }
 			let containerId = CNContactStore().defaultContainerIdentifier()
 			let predicate: NSPredicate = CNContact.predicateForContactsInContainer(withIdentifier: containerId)
 			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
 			
-			let results = contacts.map { Contact(identifier: $0.identifier, display: [$0.givenName, $0.familyName].joined(separator: " ")) }
+			let results = contacts
+				.filter { !$0.displayName.isEmpty }
+				.sorted { $0.displayName < $1.displayName }
+				.map { Contact(identifier: $0.identifier, display: $0.displayName) }
 			let collection = INObjectCollection(items: results)
 			completion(collection, nil)
 		} catch {
