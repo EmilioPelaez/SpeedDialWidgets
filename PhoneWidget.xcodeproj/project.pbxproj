@@ -24,7 +24,7 @@
 		C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */; };
 		C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
-		C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* ContentView.swift */; };
+		C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* MainView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
 		C84B9D4A25BA1A33003DF4A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4925BA1A33003DF4A7 /* Preview Assets.xcassets */; };
 		C84B9D6125BA22BD003DF4A7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84B9D6025BA22BD003DF4A7 /* WidgetKit.framework */; };
@@ -91,7 +91,7 @@
 		C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageWidgetView.swift; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
-		C84B9D4425BA1A32003DF4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C84B9D4425BA1A32003DF4A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84B9D4925BA1A33003DF4A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C84B9D5025BA1A33003DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */,
-				C84B9D4425BA1A32003DF4A7 /* ContentView.swift */,
+				C84B9D4425BA1A32003DF4A7 /* MainView.swift */,
 				C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */,
 				C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */,
 				C84B9D5025BA1A33003DF4A7 /* Info.plist */,
@@ -373,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84B9D4525BA1A32003DF4A7 /* ContentView.swift in Sources */,
+				C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */,
 				C82FDE5525BAD77400B6D5D2 /* AlertMessageView.swift in Sources */,
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,
