@@ -24,13 +24,13 @@ struct WidgetProvider: IntentTimelineProvider {
 			return completion(.empty)
 		}
 		let entry = WidgetEntry(date: Date(),
-											name: contact.displayString,
-											image: imageForContactId(contactId),
-											connection: configuration.connection,
-											background: Background.all[configuration.color.rawValue],
-											urlString: [configuration.connection.scheme, address].joined(),
-											isEmpty: false,
-											size: configuration.imageSize)
+														name: configuration.altName?.nilOnEmpty ?? contact.displayString,
+														image: imageForContactId(contactId),
+														connection: configuration.connection,
+														background: Background.all[configuration.color.rawValue],
+														urlString: [configuration.connection.scheme, address].joined(),
+														isEmpty: false,
+														size: configuration.imageSize)
 		completion(entry)
 	}
 	

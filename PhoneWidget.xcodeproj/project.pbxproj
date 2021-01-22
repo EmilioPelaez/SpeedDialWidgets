@@ -14,6 +14,7 @@
 		C82FDE2425BA52D700B6D5D2 /* String+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */; };
 		C82FDE2C25BACBB200B6D5D2 /* PhoneWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2B25BACBB200B6D5D2 /* PhoneWidget.swift */; };
 		C82FDE3425BACBD700B6D5D2 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE3325BACBD700B6D5D2 /* WidgetView.swift */; };
+		C82FDE4D25BAD08D00B6D5D2 /* String+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */; };
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
 		C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
@@ -388,6 +389,7 @@
 				C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */,
 				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
 				C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */,
+				C82FDE4D25BAD08D00B6D5D2 /* String+Nil.swift in Sources */,
 				C82FDE2C25BACBB200B6D5D2 /* PhoneWidget.swift in Sources */,
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,
 				C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */,
