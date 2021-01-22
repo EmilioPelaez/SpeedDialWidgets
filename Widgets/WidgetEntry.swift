@@ -19,13 +19,13 @@ struct WidgetEntry: TimelineEntry {
 	let size: ImageSize
 	
 	static let placeholderSmall = WidgetEntry(date: Date(),
-																			 name: "Emilio Peláez",
-																			 image: Image("Avatar"),
-																			 connection: .phone,
-																			 background: Background.all[7],
-																			 urlString: "example",
-																			 isEmpty: false,
-																			 size: .small)
+																						name: "Emilio Peláez",
+																						image: Image("Avatar"),
+																						connection: .phone,
+																						background: Background.all[7],
+																						urlString: "example",
+																						isEmpty: false,
+																						size: .small)
 	
 	static let placeholder = WidgetEntry(date: Date(),
 																			 name: "Emilio Peláez",
@@ -37,20 +37,20 @@ struct WidgetEntry: TimelineEntry {
 																			 size: .medium)
 	
 	static let placeholderLarge = WidgetEntry(date: Date(),
-																			 name: "Emilio Peláez",
-																			 image: Image("Avatar"),
-																			 connection: .phone,
-																			 background: Background.all[7],
-																			 urlString: "example",
-																			 isEmpty: false,
-																			 size: .large)
+																						name: "Emilio Peláez",
+																						image: Image("Avatar"),
+																						connection: .phone,
+																						background: Background.all[7],
+																						urlString: "example",
+																						isEmpty: false,
+																						size: .large)
 	
 	static let empty = WidgetEntry(date: Date(),
-																			 name: "Emilio Peláez",
-																			 image: Image("Avatar"),
-																			 connection: .phone,
-																			 background: Background.all[7],
-																			 urlString: "example",
-																			 isEmpty: true,
-																			 size: .medium)
+																 name: "Emilio Peláez",
+																 image: Image("Avatar"),
+																 connection: .phone,
+																 background: Background.all[7],
+																 urlString: "example",
+																 isEmpty: true,
+																 size: .medium)
 }
