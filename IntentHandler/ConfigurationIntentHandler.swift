@@ -49,7 +49,7 @@ class ConfigurationIntentHandler: NSObject, ConfigurationIntentHandling {
 			
 			let phones = contacts
 				.flatMap { $0.phoneNumbers }
-				.map { ($0.value.stringValue, [$0.label.map(decodeLabel(_:)), $0.value.stringValue].compactMap { $0 }.joined(separator: ": ")) }
+				.map { ($0.value.stringValue.replacingOccurrences(of: " ", with: ""), [$0.label.map(decodeLabel(_:)), $0.value.stringValue].compactMap { $0 }.joined(separator: ": ")) }
 				.map { Address(identifier: $0, display: $1) }
 			
 			let emails = contacts

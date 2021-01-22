@@ -17,16 +17,16 @@ struct WidgetProvider: IntentTimelineProvider {
 	}
 	
 	func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (WidgetEntry) -> ()) {
-		guard let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address else {
+		guard let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address?.identifier else {
 			let entry = WidgetEntry.example
 			return completion(entry)
 		}
-		
 		let entry = WidgetEntry(date: Date(),
 											name: contact.displayString,
 											image: imageForContactId(contactId),
 											connection: configuration.connection,
-											background: Background.all[configuration.color.rawValue])
+											background: Background.all[configuration.color.rawValue],
+											urlString: [configuration.connection.scheme, address].joined())
 		completion(entry)
 	}
 	

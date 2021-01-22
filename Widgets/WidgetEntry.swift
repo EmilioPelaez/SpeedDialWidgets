@@ -14,10 +14,12 @@ struct WidgetEntry: TimelineEntry {
 	let image: Image?
 	let connection: Connection
 	let background: Background
+	let urlString: String
 	
 	static let example = WidgetEntry(date: Date(),
 														 name: "Emilio Peláez",
 														 image: Image("Avatar"),
 														 connection: .phone,
-														 background: Background.all[7])
+														 background: Background.all[7],
+														 urlString: "example")
 }

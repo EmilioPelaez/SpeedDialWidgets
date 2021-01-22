@@ -44,6 +44,7 @@ extension LargeImageWidget {
 					.background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
 				}
 			}
+			.widgetURL(URL(string: entry.urlString))
 		}
 	}
 }

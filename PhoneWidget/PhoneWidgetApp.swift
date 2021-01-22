@@ -12,6 +12,10 @@ struct PhoneWidgetApp: App {
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.onOpenURL(perform: { url in
+					print(url)
+					UIApplication.shared.open(url)
+				})
 		}
 	}
 }

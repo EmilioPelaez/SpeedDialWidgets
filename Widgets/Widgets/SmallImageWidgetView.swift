@@ -46,6 +46,7 @@ extension SmallImageWidget {
 				.padding(.horizontal)
 				.foregroundColor(.white)
 			}
+			.widgetURL(URL(string: entry.urlString))
 		}
 	}
 }

@@ -48,6 +48,7 @@ extension MediumImageWidget {
 				.padding(.horizontal)
 				.foregroundColor(.white)
 			}
+			.widgetURL(URL(string: entry.urlString))
 		}
 	}
 }

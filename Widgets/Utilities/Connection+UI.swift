@@ -26,4 +26,13 @@ extension Connection {
 		}
 	}
 	
+	var scheme: String {
+		switch self {
+		case .phone: return "tel://"
+		case .faceTime: return "facetime://"
+		case .faceTimeAudio: return "facetime-audio://"
+		case .unknown: return "tel://"
+		}
+	}
+	
 }
