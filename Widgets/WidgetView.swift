@@ -15,12 +15,15 @@ struct WidgetView : View {
 		if entry.isEmpty {
 			ConfigurationView()
 		} else {
-			switch entry.size {
-			case .small: SmallImageWidgetView(entry: entry)
-			case .medium: MediumImageWidgetView(entry: entry)
-			case .large: LargeImageWidgetView(entry: entry)
-			case _: MediumImageWidgetView(entry: entry)
+			Group {
+				switch entry.size {
+				case .small: SmallImageWidgetView(entry: entry)
+				case .medium: MediumImageWidgetView(entry: entry)
+				case .large: LargeImageWidgetView(entry: entry)
+				case _: MediumImageWidgetView(entry: entry)
+				}
 			}
+			.widgetURL(URL(string: entry.urlString))
 		}
 	}
 }
