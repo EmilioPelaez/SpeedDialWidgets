@@ -13,7 +13,6 @@ struct PhoneWidgetApp: App {
 		WindowGroup {
 			ContentView()
 				.onOpenURL(perform: { url in
-					print(url)
 					UIApplication.shared.open(url)
 				})
 		}
