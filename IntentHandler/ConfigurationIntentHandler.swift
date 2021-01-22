@@ -9,6 +9,11 @@ import Intents
 import Contacts
 
 class ConfigurationIntentHandler: NSObject, ConfigurationIntentHandling {
+	
+	enum IntentError: Error {
+		case noContacts
+	}
+	
 	func provideContactOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<Contact>?, Error?) -> Void) {
 		do {
 			let keys = [CNContactGivenNameKey, CNContactMiddleNameKey, CNContactFamilyNameKey, CNContactNicknameKey, CNContactTypeKey, CNContactOrganizationNameKey]
@@ -17,11 +22,25 @@ class ConfigurationIntentHandler: NSObject, ConfigurationIntentHandling {
 			let predicate: NSPredicate = CNContact.predicateForContactsInContainer(withIdentifier: containerId)
 			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
 			
+			
+			
 			let results = contacts
 				.filter { !$0.displayName.isEmpty }
-				.sorted { $0.displayName < $1.displayName }
+				.sorted { $0.displayName.compare($1.displayName, options: [.diacriticInsensitive, .caseInsensitive]) == .orderedAscending }
 				.map { Contact(identifier: $0.identifier, display: $0.displayName) }
-			let collection = INObjectCollection(items: results)
+			
+			guard !results.isEmpty else { throw IntentError.noContacts }
+			
+			let dictionary = Dictionary(grouping: results) {
+				String($0.displayString.folding(options: .diacriticInsensitive, locale: Locale(identifier: "en-US")).first ?? "#")
+			}
+			
+			let sections = dictionary.keys
+				.sorted()
+				.map { ($0, dictionary[$0] ?? []) }
+				.map(INObjectSection.init)
+			
+			let collection = INObjectCollection(sections: sections)
 			completion(collection, nil)
 		} catch {
 			print(error)
