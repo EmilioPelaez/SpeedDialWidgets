@@ -13,20 +13,23 @@ struct WidgetProvider: IntentTimelineProvider {
 	let imageSize: CGFloat
 	
 	func placeholder(in context: Context) -> WidgetEntry {
-		.example
+		.placeholder
 	}
 	
 	func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (WidgetEntry) -> ()) {
-		guard let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address?.identifier else {
-			let entry = WidgetEntry.example
-			return completion(entry)
+		guard !context.isPreview else {
+			return completion(.placeholder)
+		}
+		guard !context.isPreview, let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address?.identifier else {
+			return completion(.empty)
 		}
 		let entry = WidgetEntry(date: Date(),
 											name: contact.displayString,
 											image: imageForContactId(contactId),
 											connection: configuration.connection,
 											background: Background.all[configuration.color.rawValue],
-											urlString: [configuration.connection.scheme, address].joined())
+											urlString: [configuration.connection.scheme, address].joined(),
+											isEmpty: false)
 		completion(entry)
 	}
 	

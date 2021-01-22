@@ -15,11 +15,21 @@ struct WidgetEntry: TimelineEntry {
 	let connection: Connection
 	let background: Background
 	let urlString: String
+	let isEmpty: Bool
 	
-	static let example = WidgetEntry(date: Date(),
-														 name: "Emilio Peláez",
-														 image: Image("Avatar"),
-														 connection: .phone,
-														 background: Background.all[7],
-														 urlString: "example")
+	static let placeholder = WidgetEntry(date: Date(),
+																			 name: "Emilio Peláez",
+																			 image: Image("Avatar"),
+																			 connection: .phone,
+																			 background: Background.all[7],
+																			 urlString: "example",
+																			 isEmpty: false)
+	
+	static let empty = WidgetEntry(date: Date(),
+																			 name: "Emilio Peláez",
+																			 image: Image("Avatar"),
+																			 connection: .phone,
+																			 background: Background.all[7],
+																			 urlString: "example",
+																			 isEmpty: true)
 }
