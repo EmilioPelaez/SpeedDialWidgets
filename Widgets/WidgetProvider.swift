@@ -29,7 +29,8 @@ struct WidgetProvider: IntentTimelineProvider {
 											connection: configuration.connection,
 											background: Background.all[configuration.color.rawValue],
 											urlString: [configuration.connection.scheme, address].joined(),
-											isEmpty: false)
+											isEmpty: false,
+											size: configuration.imageSize)
 		completion(entry)
 	}
 	
