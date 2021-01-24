@@ -19,13 +19,15 @@ struct TutorialView: View {
 						Group {
 							TutorialStepView(title: "Step 1",
 															 content: "On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!",
-															 caption: "Tip: Holding on an empty space is faster!")
+															 caption: "Tip: Holding on an empty space is faster!",
+															 image: Image("Step1"))
 							Divider()
 						}
 						Group {
 							TutorialStepView(title: "Step 2",
-															 content: "Find Phone Widget in the list and tap on it.",
-															 caption: "Tip: You can also use the search bar!")
+															 content: "Find \"Phone Home\" in the list and tap on it.",
+															 caption: "Tip: You can also use the search bar!",
+															 image: Image("Step2"))
 							Divider()
 						}
 						.transition(.slide)
@@ -33,7 +35,8 @@ struct TutorialView: View {
 						Group {
 							TutorialStepView(title: "Step 3",
 															 content: "Tap Add Widget",
-															 caption: "Tip: You can also drag the widget into your Home or Lock Screen!")
+															 caption: "Tip: You can also drag the widget into your Home or Lock Screen!",
+															 image: Image("Step3"))
 							Divider()
 						}
 						.transition(.slide)
@@ -41,7 +44,8 @@ struct TutorialView: View {
 						Group {
 							TutorialStepView(title: "Step 4",
 															 content: "If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget.",
-															 caption: nil)
+															 caption: nil,
+															 image: Image("Step4"))
 								Divider()
 						}
 						.transition(.slide)
@@ -49,7 +53,8 @@ struct TutorialView: View {
 						Group {
 							TutorialStepView(title: "Step 5",
 															 content: "Configure your widget with an image size, a color, a contact and your call options.",
-															 caption: "Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!")
+															 caption: "Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!",
+															 image : Image("Step5"))
 							Divider()
 						}
 						.transition(.slide)
@@ -57,7 +62,8 @@ struct TutorialView: View {
 						Group {
 							TutorialStepView(title: "Done!",
 															 content: "Your widget is ready! Now tap on it whenever you want to make a call!",
-															 caption: nil)
+															 caption: nil,
+															 image: Image("Step6"))
 						}
 						.transition(.slide)
 						.hidden(currentStep < 6)

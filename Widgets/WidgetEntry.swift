@@ -28,7 +28,7 @@ struct WidgetEntry: TimelineEntry {
 																						size: .small)
 	
 	static let placeholder = WidgetEntry(date: Date(),
-																			 name: "Emilio Peláez",
+																			 name: "Emilio P.",
 																			 image: Image("Avatar"),
 																			 connection: .phone,
 																			 background: Background.all[7],

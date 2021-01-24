@@ -11,6 +11,7 @@ struct TutorialStepView: View {
 	let title: String
 	let content: String
 	let caption: String?
+	let image: Image
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8) {
@@ -25,8 +26,7 @@ struct TutorialStepView: View {
 					.lineLimit(nil)
 					.font(.caption)
 			}
-			
-			Color.red.frame(height: 100)
+			image.resizable().aspectRatio(contentMode: .fill)
 		}
 	}
 }
@@ -35,7 +35,8 @@ struct TutorialStepView_Previews: PreviewProvider {
 	static var previews: some View {
 		TutorialStepView(title: "Step 6",
 										 content: "Your widget is ready! Now tap on it whenever you want to make a call!",
-										 caption: nil)
+										 caption: nil,
+										 image: Image("Step1"))
 			.frame(width: 300)
 			.padding()
 //			.previewLayout(.sizeThatFits)
