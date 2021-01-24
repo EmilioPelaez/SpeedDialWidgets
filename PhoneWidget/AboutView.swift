@@ -58,6 +58,13 @@ struct AboutView: View {
 						.padding()
 				}
 			}
+			ZStack(alignment: .bottom) {
+				Color.clear
+				Text("100% free forever. No ads,\nno subscriptions, no limits.")
+					.multilineTextAlignment(.center)
+					.font(.footnote)
+					.padding()
+			}
 		}
 	}
 	
