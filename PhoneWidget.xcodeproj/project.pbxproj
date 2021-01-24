@@ -17,6 +17,7 @@
 		C82FDE4D25BAD08D00B6D5D2 /* String+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */; };
 		C82FDE5525BAD77400B6D5D2 /* AlertMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */; };
 		C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */; };
+		C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */; };
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
 		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
 		C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
@@ -84,6 +85,7 @@
 		C82FDE3325BACBD700B6D5D2 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageView.swift; sourceTree = "<group>"; };
 		C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
 		C837D02425BA31DF00FB1D48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
 		C837D05E25BA376200FB1D48 /* Connection+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+UI.swift"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */,
 				C84B9D4425BA1A32003DF4A7 /* MainView.swift */,
 				C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */,
+				C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */,
 				C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */,
 				C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */,
 				C84B9D5025BA1A33003DF4A7 /* Info.plist */,
@@ -378,6 +381,7 @@
 			files = (
 				C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */,
 				C82FDE5525BAD77400B6D5D2 /* AlertMessageView.swift in Sources */,
+				C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */,
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,
