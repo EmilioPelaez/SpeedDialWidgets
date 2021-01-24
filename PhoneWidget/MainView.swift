@@ -24,7 +24,7 @@ struct MainView: View {
 						self.showCallMessage = false
 					}
 			} else {
-				Text("Hello")
+				TutorialView()
 			}
 		}
 		.onOpenURL(perform: { url in
