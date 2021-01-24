@@ -73,11 +73,12 @@ struct TutorialView: View {
 									}
 								}
 							} label: {
-								if currentStep < totalSteps - 1 {
-									Text("Next Step")
-								} else {
-									Text("Final Step")
-								}
+								Text("\(currentStep < totalSteps - 1 ? "Next" : "Final") Step")
+									.font(.headline)
+									.foregroundColor(Color(.systemBackground))
+									.padding()
+									.background(Color.primary)
+									.cornerRadius(150)
 							}
 							.padding()
 							Spacer()
