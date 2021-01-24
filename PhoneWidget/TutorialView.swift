@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TutorialView: View {
+	@State var showAbout: Bool = false
+	
 	@State var currentStep: Int = 1
 	let totalSteps = 6
 	
@@ -46,7 +48,7 @@ struct TutorialView: View {
 															 content: "If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget.",
 															 caption: nil,
 															 image: Image("Step4"))
-								Divider()
+							Divider()
 						}
 						.transition(.slide)
 						.hidden(currentStep < 4)
@@ -96,6 +98,17 @@ struct TutorialView: View {
 					}
 					.padding()
 					.navigationTitle("How to Use")
+					.navigationBarItems(leading:
+																Button {
+																	self.showAbout = true
+																} label: {
+																	Image(systemName: "info.circle.fill")
+																		.font(.title2)
+																}
+					)
+					.sheet(isPresented: $showAbout) {
+						AboutView(showAbout: $showAbout)
+					}
 				}
 			}
 		}
