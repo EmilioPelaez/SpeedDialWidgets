@@ -15,14 +15,12 @@ struct AboutView: View {
 			Color.clear
 			VStack(spacing: 30) {
 				ZStack(alignment: .bottom) {
-					Color.black
-						.frame(width: 75, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-						.padding(.bottom, 2)
-						.shadow(color: Color(white: 0, opacity: 0.5), radius: 10, x: 0, y: 2)
-					Color.black
-						.frame(width: 40, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-						.padding(.bottom, 2)
-						.shadow(color: Color(white: 0, opacity: 0.5), radius: 10, x: 0, y: 2)
+					
+					RoundedRectangle(cornerRadius: 20)
+						.fill(Color(.red))
+						.frame(width: 90, height: 5)
+						.padding(.bottom, 15)
+						.shadow(color: Color(white: 0, opacity: 1), radius: 5, x: 0, y: 15)
 					Image("Icon")
 						.resizable()
 						.frame(width: 100, height: 100)
