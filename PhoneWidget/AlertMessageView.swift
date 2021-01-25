@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct AlertMessageView: View {
+	let index = Int.random(in: 0..<3)
+	
 	var body: some View {
 		ZStack {
 			Color.clear
 			VStack(spacing: 10) {
-				Color.clear
+				ZStack {
+					Color.clear
+					VStack(alignment: .trailing) {
+						Image(["Call-Couch", "Call-iPhone", "Call-Night"][index])
+							.resizable()
+							.aspectRatio(contentMode: .fit)
+					}
+					.padding()
+				}
 				Text("The system doesn't allow us to make calls automatically.\n(That's a good thing!)")
 					.font(.caption)
 					.multilineTextAlignment(.center)
