@@ -17,6 +17,9 @@ struct WidgetProvider: IntentTimelineProvider {
 	}
 	
 	func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (WidgetEntry) -> ()) {
+		if let altName = configuration.altName, let demo = WidgetEntry.demo[altName] {
+			return completion(demo)
+		}
 		guard !context.isPreview && configuration.altName != "Demo" else {
 			return completion(.placeholder)
 		}
