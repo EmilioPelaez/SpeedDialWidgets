@@ -25,6 +25,7 @@ struct LargeImageWidgetView : View {
 					HStack {
 						Text(entry.name)
 							.lineLimit(1)
+							.minimumScaleFactor(0.5)
 							.font(.system(size: 18, weight: .semibold, design: .default))
 						Spacer()
 					}

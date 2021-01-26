@@ -35,19 +35,21 @@ struct MediumImageWidgetView : View {
 						HStack {
 							Text(entry.name)
 								.lineLimit(1)
+								.minimumScaleFactor(0.5)
 								.font(.system(size: 25, weight: .semibold, design: .default))
 							Spacer()
 						}
 						HStack(spacing: 4) {
 							entry.connection.image
 							Text(entry.connection.name)
+								.lineLimit(1)
 								.font(.system(size: 15, weight: .bold, design: .default))
 							Spacer()
 						}
 						.opacity(0.5)
 					}
 				}
-				.padding()
+				.padding(.horizontal)
 				.foregroundColor(.white)
 			}
 		}

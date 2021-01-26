@@ -14,7 +14,7 @@ struct SmallImageWidgetView : View {
 	var body: some View {
 		ZStack {
 			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
-			VStack(spacing: 0) {
+			VStack(spacing: 2) {
 				HStack {
 					ZStack {
 						Color.white
@@ -37,12 +37,14 @@ struct SmallImageWidgetView : View {
 				HStack(spacing: 4) {
 					entry.connection.image
 					Text(entry.connection.name)
+						.lineLimit(1)
+						.minimumScaleFactor(0.5)
 						.font(.system(size: 15, weight: .bold, design: .default))
 					Spacer()
 				}
 				.opacity(0.5)
 			}
-			.padding()
+			.padding(.horizontal)
 			.foregroundColor(.white)
 		}
 	}
