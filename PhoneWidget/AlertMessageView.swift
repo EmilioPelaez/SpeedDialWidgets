@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct AlertMessageView: View {
-	let index = Int.random(in: 0..<3)
+	var imageName: String {
+		switch Calendar.current.component(.hour, from: Date()) {
+		case 9...17: return "Call-iPhone"
+		case 17...22: return "Call-Couch"
+		case _: return "Call-Night"
+		}
+	}
 	
 	var body: some View {
 		ZStack {
@@ -17,7 +23,7 @@ struct AlertMessageView: View {
 				ZStack {
 					Color.clear
 					VStack(alignment: .trailing) {
-						Image(["Call-Couch", "Call-iPhone", "Call-Night"][index])
+						Image(imageName)
 							.resizable()
 							.aspectRatio(contentMode: .fit)
 					}
@@ -40,7 +46,6 @@ struct AlertMessageView: View {
 				Color(.systemGroupedBackground).ignoresSafeArea()
 			)
 		}
-		
 	}
 }
 
