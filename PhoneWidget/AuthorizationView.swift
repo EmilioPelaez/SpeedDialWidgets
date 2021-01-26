@@ -13,23 +13,52 @@ struct AuthorizationView: View {
 	@Binding var authorization: CNAuthorizationStatus
 	
 	var body: some View {
-		switch authorization {
-		case .notDetermined:
+		VStack(spacing: 25) {
+			Image("Contacts")
+				.resizable()
+				.aspectRatio(contentMode: .fit)
+				.frame(width: 200)
+			switch authorization {
+			case .notDetermined:
+				AuthorizationContent(title: "Welcome!",
+														 content: "In order to create widgets for your contacts we'll need access to your contacts.",
+														 buttonTitle: "Grant Access") {
+					store.requestAccess(for: .contacts) { success, _ in
+						self.authorization = CNContactStore.authorizationStatus(for: .contacts)
+					}
+				}
+			case .denied, .restricted:
+				AuthorizationContent(title: "Uh oh!",
+														 content: "We need access to your contacts in order to create widgets. You can grant access from the settings app!",
+														 buttonTitle: "Open Settings") {
+					URL(string: UIApplication.openSettingsURLString).map {
+						UIApplication.shared.open($0)
+					}
+				}
+			case _:
+				Text("")
+			}
+		}
+	}
+	
+	struct AuthorizationContent: View {
+		let title: String
+		let content: String
+		let buttonTitle: String
+		let buttonAction: () -> Void
+		
+		var body: some View {
 			VStack(alignment: .leading, spacing: 8) {
-				Text("Welcome!")
+				Text(title)
 					.font(.largeTitle)
-				Text("In order to create widgets for your contacts we'll need access to your contacts.")
+				Text(content)
 					.font(.title2)
 				Spacer()
 					.frame(height: 20)
 				HStack {
 					Spacer()
-					Button {
-						store.requestAccess(for: .contacts) { success, _ in
-							self.authorization = CNContactStore.authorizationStatus(for: .contacts)
-						}
-					} label: {
-						Text("Grant Access")
+					Button(action: buttonAction) {
+						Text(buttonTitle)
 							.font(.headline)
 							.foregroundColor(Color(.systemBackground))
 							.padding()
@@ -38,41 +67,15 @@ struct AuthorizationView: View {
 					}
 					Spacer()
 				}
-			}.frame(width: 300)
-		case .denied, .restricted:
-			VStack(alignment: .leading, spacing: 8) {
-				Text("Uh oh!")
-					.font(.largeTitle)
-				Text("We need access to your contacts in order to create widgets. You can grant access from the settings app!")
-					.font(.title2)
-				Spacer()
-					.frame(height: 20)
-				HStack {
-					Spacer()
-					Button {
-						URL(string: UIApplication.openSettingsURLString).map {
-							UIApplication.shared.open($0)
-						}
-					} label: {
-						Text("Open Settings")
-							.font(.headline)
-							.foregroundColor(Color(.systemBackground))
-							.padding()
-							.background(Color.primary)
-							.cornerRadius(150)
-					}
-					Spacer()
-				}
-			}.frame(width: 300)
-		case _:
-			Text("")
+			}
+			.frame(width: 300)
 		}
 	}
 }
 
 struct AuthorizationView_Previews: PreviewProvider {
 	static var previews: some View {
-		AuthorizationView(authorization: .constant(.denied))
+		AuthorizationView(authorization: .constant(.notDetermined))
 		
 //		AuthorizationView(authorization: .constant(.denied))
 	}
