@@ -85,6 +85,7 @@ struct TutorialView: View {
 									.font(.headline)
 									.foregroundColor(Color(.systemBackground))
 									.padding()
+									.padding(.horizontal)
 									.background(Color.primary)
 									.cornerRadius(150)
 							}

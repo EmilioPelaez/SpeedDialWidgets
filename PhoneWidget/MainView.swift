@@ -17,14 +17,17 @@ struct MainView: View {
 		Group {
 			if authorization != .authorized {
 				AuthorizationView(authorization: $authorization)
+					.transition(.opacity)
 			} else if showCallMessage {
 				AlertMessageView()
+					.transition(.opacity)
 					.colorScheme(.dark)
 					.onTapGesture {
 						self.showCallMessage = false
 					}
 			} else {
 				TutorialView()
+					.transition(.opacity)
 			}
 		}
 		.onOpenURL(perform: { url in
@@ -35,7 +38,9 @@ struct MainView: View {
 		.onChange(of: scenePhase, perform: { value in
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			guard value == .active else { return }
-			self.showCallMessage = false
+			withAnimation {
+				self.showCallMessage = false
+			}
 		})
 	}
 	

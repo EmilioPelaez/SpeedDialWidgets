@@ -21,10 +21,12 @@ struct AuthorizationView: View {
 			switch authorization {
 			case .notDetermined:
 				AuthorizationContent(title: "Welcome!",
-														 content: "In order to create widgets for your contacts we'll need access to your contacts.",
+														 content: "In order to create widgets for your contacts we'll need access to your address book.",
 														 buttonTitle: "Grant Access") {
 					store.requestAccess(for: .contacts) { success, _ in
-						self.authorization = CNContactStore.authorizationStatus(for: .contacts)
+						withAnimation {
+							self.authorization = CNContactStore.authorizationStatus(for: .contacts)
+						}
 					}
 				}
 			case .denied, .restricted:
@@ -62,6 +64,7 @@ struct AuthorizationView: View {
 							.font(.headline)
 							.foregroundColor(Color(.systemBackground))
 							.padding()
+							.padding(.horizontal)
 							.background(Color.primary)
 							.cornerRadius(150)
 					}
