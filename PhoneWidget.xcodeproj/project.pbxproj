@@ -26,6 +26,7 @@
 		C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */; };
 		C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */; };
 		C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */; };
+		C840F5C925C01C15008323A6 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840F5C825C01C15008323A6 /* AuthorizationView.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
 		C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* MainView.swift */; };
 		C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
 		C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageWidgetView.swift; sourceTree = "<group>"; };
+		C840F5C825C01C15008323A6 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
 		C84B9D4425BA1A32003DF4A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */,
 				C84B9D4425BA1A32003DF4A7 /* MainView.swift */,
+				C840F5C825C01C15008323A6 /* AuthorizationView.swift */,
 				C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */,
 				C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */,
 				C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */,
@@ -393,6 +396,7 @@
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,
+				C840F5C925C01C15008323A6 /* AuthorizationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

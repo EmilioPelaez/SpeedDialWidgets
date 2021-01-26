@@ -9,15 +9,15 @@ import SwiftUI
 import Contacts
 
 struct MainView: View {
-	let store = CNContactStore()
-	
 	@Environment(\.scenePhase) private var scenePhase
-	@State var authorizationFailed = false
+	@State var authorization = CNContactStore.authorizationStatus(for: .contacts)
 	@State var showCallMessage: Bool =  false
 	
 	var body: some View {
 		Group {
-			if showCallMessage {
+			if authorization != .authorized {
+				AuthorizationView(authorization: $authorization)
+			} else if showCallMessage {
 				AlertMessageView()
 					.colorScheme(.dark)
 					.onTapGesture {
@@ -33,31 +33,10 @@ struct MainView: View {
 			self.showCallMessage = true
 		})
 		.onChange(of: scenePhase, perform: { value in
-			print(value)
+			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			guard value == .active else { return }
 			self.showCallMessage = false
 		})
-		.onAppear {
-			switch CNContactStore.authorizationStatus(for: .contacts) {
-			case .notDetermined:
-				store.requestAccess(for: .contacts) { success, _ in
-					if !success {
-						self.authorizationFailed = true
-					}
-				}
-			case .denied, .restricted:
-				DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
-					self.authorizationFailed = true
-				}
-			case _: break
-			}
-		}
-		.alert(isPresented: $authorizationFailed) {
-			Alert(title: Text("Contact Access Denied"),
-						message: Text("You'll need to grant contacts permissions to use this app. You can do this from settings."),
-						primaryButton: .cancel(Text("Ok")),
-						secondaryButton: .default(Text("Open Settings"), action: self.openSettings))
-		}
 	}
 	
 	func openSettings() {
@@ -70,6 +49,6 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
 	static var previews: some View {
-		MainView(authorizationFailed: false)
+		MainView()
 	}
 }
