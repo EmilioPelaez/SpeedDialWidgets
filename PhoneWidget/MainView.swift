@@ -33,7 +33,9 @@ struct MainView: View {
 		.onOpenURL(perform: { url in
 			print(url)
 			UIApplication.shared.open(url)
-			self.showCallMessage = true
+			if Connection.call.contains(where: { $0.matches(url) }) {
+				self.showCallMessage = true
+			}
 		})
 		.onChange(of: scenePhase, perform: { value in
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)

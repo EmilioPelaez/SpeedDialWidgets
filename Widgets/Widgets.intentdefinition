@@ -55,6 +55,36 @@
 					<key>INEnumValueName</key>
 					<string>faceTimeAudio</string>
 				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Message</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>hQl3NH</string>
+					<key>INEnumValueIndex</key>
+					<integer>4</integer>
+					<key>INEnumValueName</key>
+					<string>message</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>WhatsApp</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>0QuY5U</string>
+					<key>INEnumValueIndex</key>
+					<integer>5</integer>
+					<key>INEnumValueName</key>
+					<string>whatsapp</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Telegram</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>Ny0Xqp</string>
+					<key>INEnumValueIndex</key>
+					<integer>6</integer>
+					<key>INEnumValueName</key>
+					<string>telegram</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>

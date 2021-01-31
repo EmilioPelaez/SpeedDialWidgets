@@ -43,6 +43,7 @@
 		C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */; };
+		C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -395,6 +396,7 @@
 				C82FDE7025BDAB9500B6D5D2 /* View+Hidden.swift in Sources */,
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */,
+				C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,
 				C840F5C925C01C15008323A6 /* AuthorizationView.swift in Sources */,
 			);

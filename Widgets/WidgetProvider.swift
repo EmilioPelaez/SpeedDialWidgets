@@ -26,12 +26,13 @@ struct WidgetProvider: IntentTimelineProvider {
 		guard !context.isPreview, let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address?.identifier else {
 			return completion(.empty)
 		}
+		let processedAddress = processedString(address, for: configuration.connection)
 		let entry = WidgetEntry(date: Date(),
 														name: configuration.altName?.nilOnEmpty ?? contact.displayString,
 														image: imageForContactId(contactId),
 														connection: configuration.connection,
 														background: Background.all[configuration.color.rawValue],
-														urlString: [configuration.connection.scheme, address].joined(),
+														urlString: [configuration.connection.scheme, processedAddress].joined(),
 														isEmpty: false,
 														size: configuration.imageSize)
 		completion(entry)
@@ -58,5 +59,10 @@ struct WidgetProvider: IntentTimelineProvider {
 			print(error)
 			return nil
 		}
+	}
+	
+	private func processedString(_ string: String, for connection: Connection) -> String {
+		guard connection.requiresOnlyNumbers else { return string }
+		return string.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
 	}
 }
