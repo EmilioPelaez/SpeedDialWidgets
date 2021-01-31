@@ -11,6 +11,8 @@ extension Connection {
 	
 	static var call: [Connection] = [.phone, .faceTime, .faceTimeAudio]
 	
+	static var messaging: [Connection] = [.message, .whatsapp, .telegram]
+	
 	var image: Image {
 		switch self {
 		case .phone, .faceTimeAudio: return Image(systemName: "phone.fill")

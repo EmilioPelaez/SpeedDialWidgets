@@ -46,6 +46,7 @@
 		C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
 		C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3A25C7274A005E5A87 /* ImageFill.swift */; };
 		C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
+		C865EC4525C73B5E005E5A87 /* AppSwitchingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */; };
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationIntentHandler.swift; sourceTree = "<group>"; };
 		C865EC3A25C7274A005E5A87 /* ImageFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFill.swift; sourceTree = "<group>"; };
 		C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAvatar.swift; sourceTree = "<group>"; };
+		C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitchingAlertView.swift; sourceTree = "<group>"; };
 		C8BA455025BE1A7100C88F9A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +208,7 @@
 				C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */,
 				C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */,
 				C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */,
+				C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */,
 				C8BA455025BE1A7100C88F9A /* AboutView.swift */,
 				C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */,
 				C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */,
@@ -401,6 +404,7 @@
 				C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */,
 				C82FDE7025BDAB9500B6D5D2 /* View+Hidden.swift in Sources */,
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
+				C865EC4525C73B5E005E5A87 /* AppSwitchingAlertView.swift in Sources */,
 				C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */,
 				C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */,
 				C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */,

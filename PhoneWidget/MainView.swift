@@ -9,22 +9,31 @@ import SwiftUI
 import Contacts
 
 struct MainView: View {
+	enum Message {
+		case none
+		case call
+		case message
+	}
+	
 	@Environment(\.scenePhase) private var scenePhase
 	@State var authorization = CNContactStore.authorizationStatus(for: .contacts)
-	@State var showCallMessage: Bool =  false
+	@State var showMessage: Message = .none
 	
 	var body: some View {
 		Group {
 			if authorization != .authorized {
 				AuthorizationView(authorization: $authorization)
 					.transition(.opacity)
-			} else if showCallMessage {
+			} else if showMessage == .call {
 				AlertMessageView()
 					.transition(.opacity)
 					.colorScheme(.dark)
 					.onTapGesture {
-						self.showCallMessage = false
+						self.showMessage = .none
 					}
+			} else if showMessage == .message {
+				AppSwitchingAlertView()
+					.transition(.opacity)
 			} else {
 				TutorialView()
 					.transition(.opacity)
@@ -34,14 +43,17 @@ struct MainView: View {
 			print(url)
 			UIApplication.shared.open(url)
 			if Connection.call.contains(where: { $0.matches(url) }) {
-				self.showCallMessage = true
+				self.showMessage = .call
+			} else if Connection.messaging.contains(where: { $0.matches(url) }) {
+				self.showMessage = .message
 			}
 		})
 		.onChange(of: scenePhase, perform: { value in
+			print(value)
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			guard value == .active else { return }
 			withAnimation {
-				self.showCallMessage = false
+				self.showMessage = .none
 			}
 		})
 	}
