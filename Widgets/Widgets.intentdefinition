@@ -27,7 +27,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Phone</string>
+					<string>Call by Phone</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>bJQ1KL</string>
 					<key>INEnumValueIndex</key>
@@ -37,7 +37,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>FaceTime</string>
+					<string>Call with FaceTime</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>5v3LBw</string>
 					<key>INEnumValueIndex</key>
@@ -47,7 +47,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>FaceTime Audio</string>
+					<string>Call with FaceTime Audio</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ZeKrdT</string>
 					<key>INEnumValueIndex</key>
@@ -57,7 +57,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Message</string>
+					<string>Open in Messages</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>hQl3NH</string>
 					<key>INEnumValueIndex</key>
@@ -67,7 +67,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>WhatsApp</string>
+					<string>Open in WhatsApp</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>0QuY5U</string>
 					<key>INEnumValueIndex</key>
@@ -77,7 +77,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>Telegram</string>
+					<string>Open in Telegram</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>Ny0Xqp</string>
 					<key>INEnumValueIndex</key>
@@ -251,9 +251,9 @@
 	<key>INIntentDefinitionSystemVersion</key>
 	<string>20C69</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12C33</string>
+	<string>12D4e</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.3</string>
+	<string>12.4</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -471,7 +471,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Method</string>
+					<string>Action</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>njbHAu</string>
 					<key>INIntentParameterDisplayPriority</key>
@@ -566,6 +566,13 @@
 							<string>Primary</string>
 						</dict>
 					</array>
+					<key>INIntentParameterRelationship</key>
+					<dict>
+						<key>INIntentParameterRelationshipParentName</key>
+						<string>contact</string>
+						<key>INIntentParameterRelationshipPredicateName</key>
+						<string>HasAnyValue</string>
+					</dict>
 					<key>INIntentParameterTag</key>
 					<integer>12</integer>
 					<key>INIntentParameterType</key>

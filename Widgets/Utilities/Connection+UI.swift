@@ -26,7 +26,7 @@ extension Connection {
 		case .phone: return "Phone"
 		case .faceTime: return "FaceTime"
 		case .faceTimeAudio: return "Audio"
-		case .message: return "Message"
+		case .message: return "Messages"
 		case .whatsapp: return "WhatsApp"
 		case .telegram: return "Telegram"
 		case .unknown: return "Unknown"
