@@ -14,16 +14,12 @@ struct AppSwitchingAlertView: View {
 			VStack(spacing: 10) {
 				ZStack {
 					VStack(alignment: .trailing) {
-						Image("Call-iPhone")
+						Image("Messages")
 							.resizable()
 							.aspectRatio(contentMode: .fit)
 					}
 					.padding()
 				}
-				Text("Loading...")
-					.font(.headline)
-					.multilineTextAlignment(.center)
-				
 			}
 			.padding()
 		}
