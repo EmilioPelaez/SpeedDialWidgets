@@ -24,18 +24,19 @@ struct LargeImageWidgetView : View {
 				VStack(spacing: 2) {
 					HStack {
 						Text(entry.name)
-							.lineLimit(1)
+							.lineLimit(2)
 							.minimumScaleFactor(0.5)
 							.font(.system(size: 18, weight: .semibold, design: .default))
 						Spacer()
 					}
 					HStack(spacing: 4) {
 						entry.connection.image
-							.font(.system(size: 12, weight: .bold, design: .default))
 						Text(entry.connection.name)
-							.font(.system(size: 12, weight: .bold, design: .default))
+							.lineLimit(1)
 						Spacer()
 					}
+					.font(.system(size: 14, weight: .bold, design: .default))
+					.opacity(0.5)
 				}
 				.padding(.horizontal)
 				.padding(.top, 35)
