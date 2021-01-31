@@ -29,7 +29,7 @@ struct WidgetProvider: IntentTimelineProvider {
 		let processedAddress = processedString(address, for: configuration.connection)
 		let entry = WidgetEntry(date: Date(),
 														name: configuration.altName?.nilOnEmpty ?? contact.displayString,
-														image: imageForContactId(contactId),
+														image: imageForContactId(contactId, squared: configuration.imageSize == .small),
 														connection: configuration.connection,
 														background: Background.all[configuration.color.rawValue],
 														urlString: [configuration.connection.scheme, processedAddress].joined(),
@@ -45,15 +45,18 @@ struct WidgetProvider: IntentTimelineProvider {
 		}
 	}
 	
-	private func imageForContactId(_ identifier: String) -> Image? {
+	private func imageForContactId(_ identifier: String, squared: Bool) -> Image? {
+		func resized(_ image: UIImage?) -> UIImage? {
+			squared ? image?.square(imageSize) : image?.resized(toFit: CGSize(side: imageSize))
+		}
 		do {
 			let keys = [CNContactImageDataKey].map { $0 as CNKeyDescriptor }
 			let predicate: NSPredicate = CNContact.predicateForContacts(withIdentifiers: [identifier])
 			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
 			guard let contact = contacts.first else { return nil }
 			return contact.imageData
-				.flatMap(UIImage.init)?
-				.resized(toFit: CGSize(side: imageSize))
+				.flatMap(UIImage.init)
+				.flatMap { resized($0) }
 				.map(Image.init)
 		} catch {
 			print(error)

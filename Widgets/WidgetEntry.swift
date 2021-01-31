@@ -47,7 +47,7 @@ struct WidgetEntry: TimelineEntry {
 	
 	static let empty = WidgetEntry(date: Date(),
 																 name: "Emilio Peláez",
-																 image: Image("Avatar"),
+																 image: nil,
 																 connection: .phone,
 																 background: Background.all[7],
 																 urlString: "example",

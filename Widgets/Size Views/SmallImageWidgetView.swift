@@ -16,16 +16,13 @@ struct SmallImageWidgetView : View {
 			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 			VStack(spacing: 4) {
 				HStack {
-					Group {
-						if let image = entry.image {
-							image
-								.resizable()
-								.aspectRatio(contentMode: .fit)
-						} else {
-							
-						}
+					if let image = entry.image {
+						image.resizable()
+							.aspectRatio(contentMode: .fit)
+							.clipShape(Circle())
+					} else {
+						Color.clear
 					}
-					.clipShape(Circle())
 					Spacer()
 				}
 				HStack {
@@ -40,8 +37,6 @@ struct SmallImageWidgetView : View {
 					entry.connection.image
 					Text(entry.connection.name)
 						.lineLimit(1)
-						.minimumScaleFactor(0.5)
-						
 					Spacer()
 				}
 				.font(.system(size: 14, weight: .bold, design: .default))

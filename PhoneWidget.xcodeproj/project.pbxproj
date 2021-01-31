@@ -44,6 +44,8 @@
 		C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */; };
 		C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
+		C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3A25C7274A005E5A87 /* ImageFill.swift */; };
+		C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,8 @@
 		C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		C84B9D8A25BA24BB003DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationIntentHandler.swift; sourceTree = "<group>"; };
+		C865EC3A25C7274A005E5A87 /* ImageFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFill.swift; sourceTree = "<group>"; };
+		C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAvatar.swift; sourceTree = "<group>"; };
 		C8BA455025BE1A7100C88F9A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,8 @@
 				C837D05E25BA376200FB1D48 /* Connection+UI.swift */,
 				C82FDE0625BA447F00B6D5D2 /* UIImage+Resize.swift */,
 				C82FDE0E25BA460000B6D5D2 /* CGSize+Utilities.swift */,
+				C865EC3A25C7274A005E5A87 /* ImageFill.swift */,
+				C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				C82FDE1A25BA4DEA00B6D5D2 /* ConfigurationView.swift in Sources */,
 				C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */,
 				C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */,
+				C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
 				C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */,
 				C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */,
@@ -420,6 +427,7 @@
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,
 				C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */,
 				C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */,
+				C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */,
 				C82FDE3425BACBD700B6D5D2 /* WidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
