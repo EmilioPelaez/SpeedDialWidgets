@@ -34,6 +34,10 @@ struct MainView: View {
 			} else if showMessage == .message {
 				AppSwitchingAlertView()
 					.transition(.opacity)
+					.colorScheme(.dark)
+					.onTapGesture {
+						self.showMessage = .none
+					}
 			} else {
 				TutorialView()
 					.transition(.opacity)
@@ -51,8 +55,11 @@ struct MainView: View {
 		.onChange(of: scenePhase, perform: { value in
 			print(value)
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
-			guard value == .active else { return }
-			withAnimation {
+			if self.showMessage == .call, value == .active {
+				withAnimation {
+					self.showMessage = .none
+				}
+			} else if self.showMessage == .message, value == .background {
 				self.showMessage = .none
 			}
 		})
