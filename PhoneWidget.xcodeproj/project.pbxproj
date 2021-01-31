@@ -15,7 +15,7 @@
 		C82FDE2C25BACBB200B6D5D2 /* PhoneWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2B25BACBB200B6D5D2 /* PhoneWidget.swift */; };
 		C82FDE3425BACBD700B6D5D2 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE3325BACBD700B6D5D2 /* WidgetView.swift */; };
 		C82FDE4D25BAD08D00B6D5D2 /* String+Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */; };
-		C82FDE5525BAD77400B6D5D2 /* AlertMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */; };
+		C82FDE5525BAD77400B6D5D2 /* CallAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE5425BAD77400B6D5D2 /* CallAlertView.swift */; };
 		C82FDE6025BADBA100B6D5D2 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */; };
 		C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */; };
 		C82FDE7025BDAB9500B6D5D2 /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */; };
@@ -90,7 +90,7 @@
 		C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Nil.swift"; sourceTree = "<group>"; };
 		C82FDE2B25BACBB200B6D5D2 /* PhoneWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidget.swift; sourceTree = "<group>"; };
 		C82FDE3325BACBD700B6D5D2 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
-		C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageView.swift; sourceTree = "<group>"; };
+		C82FDE5425BAD77400B6D5D2 /* CallAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAlertView.swift; sourceTree = "<group>"; };
 		C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
 		C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				C840F5C825C01C15008323A6 /* AuthorizationView.swift */,
 				C82FDE5F25BADBA100B6D5D2 /* TutorialView.swift */,
 				C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */,
-				C82FDE5425BAD77400B6D5D2 /* AlertMessageView.swift */,
+				C82FDE5425BAD77400B6D5D2 /* CallAlertView.swift */,
 				C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */,
 				C8BA455025BE1A7100C88F9A /* AboutView.swift */,
 				C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */,
@@ -400,7 +400,7 @@
 			files = (
 				C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */,
 				C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */,
-				C82FDE5525BAD77400B6D5D2 /* AlertMessageView.swift in Sources */,
+				C82FDE5525BAD77400B6D5D2 /* CallAlertView.swift in Sources */,
 				C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */,
 				C82FDE7025BDAB9500B6D5D2 /* View+Hidden.swift in Sources */,
 				C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,

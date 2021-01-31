@@ -1,5 +1,5 @@
 //
-//  AlertMessageView.swift
+//  CallAlertView.swift
 //  PhoneWidget
 //
 //  Created by Emilio Peláez on 22/01/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AlertMessageView: View {
+struct CallAlertView: View {
 	var imageName: String {
 		switch Calendar.current.component(.hour, from: Date()) {
 		case 9...17: return "Call-iPhone"
@@ -51,6 +51,6 @@ struct AlertMessageView: View {
 
 struct AlertMessageView_Previews: PreviewProvider {
 	static var previews: some View {
-		AlertMessageView()
+		CallAlertView()
 	}
 }

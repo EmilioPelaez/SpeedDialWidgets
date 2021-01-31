@@ -25,7 +25,7 @@ struct MainView: View {
 				AuthorizationView(authorization: $authorization)
 					.transition(.opacity)
 			} else if showMessage == .call {
-				AlertMessageView()
+				CallAlertView()
 					.transition(.opacity)
 					.colorScheme(.dark)
 					.onTapGesture {
