@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Contacts
+import StoreKit
+import WidgetKit
 
 struct MainView: View {
 	enum Message {
@@ -53,7 +55,9 @@ struct MainView: View {
 			}
 		})
 		.onChange(of: scenePhase, perform: { value in
-			print(value)
+			if self.showMessage == .none, value == .active {
+				showRateAlert()
+			}
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			if self.showMessage == .call, value == .active {
 				withAnimation {
@@ -63,6 +67,17 @@ struct MainView: View {
 				self.showMessage = .none
 			}
 		})
+	}
+	
+	func showRateAlert() {
+		WidgetCenter.shared.getCurrentConfigurations { result in
+			DispatchQueue.main.async {
+				guard case .success(let widgets) = result,
+							!widgets.isEmpty,
+							let scene = UIApplication.shared.windows.first?.windowScene else { return }
+				SKStoreReviewController.requestReview(in: scene)
+			}
+		}
 	}
 	
 	func openSettings() {
