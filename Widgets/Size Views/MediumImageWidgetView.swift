@@ -23,20 +23,22 @@ struct MediumImageWidgetView : View {
 					}
 				}
 				.clipShape(ContainerRelativeShape())
-				HStack {
-					Text(entry.name)
-						.lineLimit(1)
-						.font(.system(size: 18, weight: .semibold, design: .default))
-					Spacer()
+				VStack(spacing: 0) {
+					HStack {
+						Text(entry.name)
+							.lineLimit(1)
+							.font(.system(size: 18, weight: .semibold, design: .default))
+						Spacer()
+					}
+					HStack(spacing: 4) {
+						entry.connection.image
+						Text(entry.connection.name)
+							.lineLimit(1)
+						Spacer()
+					}
+					.font(.system(size: 14, weight: .bold, design: .default))
+					.opacity(0.5)
 				}
-				HStack(spacing: 4) {
-					entry.connection.image
-					Text(entry.connection.name)
-						.lineLimit(1)
-					Spacer()
-				}
-				.font(.system(size: 14, weight: .bold, design: .default))
-				.opacity(0.5)
 			}
 			.padding()
 			.foregroundColor(.white)
