@@ -18,7 +18,7 @@ struct TutorialView: View {
 			ScrollViewReader { scroll in
 				ScrollView {
 					VStack(alignment: .leading, spacing: 15) {
-						Text("Thank you for installing Phone Home Widgets! All the configuration for this app is done in the Home Screen or the Lock Screen or your device. The app only holds instructions to add your widgets.")
+						Text("Thank you for installing Phone Home Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.")
 							.font(.headline)
 							.padding()
 							.background(Color(.secondarySystemBackground))
@@ -82,7 +82,11 @@ struct TutorialView: View {
 							Spacer()
 							Button {
 								withAnimation(Animation.easeInOut(duration: 0.15)) {
-									self.currentStep += 1
+									if self.currentStep < totalSteps {
+										self.currentStep += 1
+									} else {
+										self.currentStep = 0
+									}
 									DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
 										withAnimation {
 											scroll.scrollTo("Bottom")
@@ -102,7 +106,6 @@ struct TutorialView: View {
 							Spacer()
 						}
 						.transition(.slide)
-						.hidden(currentStep >= 6, remove: true)
 						Spacer()
 							.id("Bottom")
 					}
@@ -128,7 +131,8 @@ struct TutorialView: View {
 		switch currentStep {
 		case 0: return "Get Started"
 		case 1..<totalSteps - 1: return "Next Step"
-		case _: return "Final Step"
+		case totalSteps - 1: return "Final Step"
+		case _: return "Start Over"
 		}
 	}
 }
