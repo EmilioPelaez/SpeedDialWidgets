@@ -81,14 +81,15 @@ struct AboutView: View {
 					self.showAbout = false
 				} label: {
 					Image(systemName: "xmark")
-						.foregroundColor(Color(white: 0.5, opacity: 1))
-						.font(.headline)
-						.padding(8)
+						.foregroundColor(Color(.systemGray))
+						.font(.system(size: 15, weight: .bold))
+						.frame(width: 30, height: 30)
 						.background(
-							Circle().fill(Color(white: 0.85, opacity: 0.5))
+							Circle().fill(Color(.systemGray4).opacity(0.5))
 						)
-						.padding()
+						.padding(7)
 				}
+				.padding(7)
 			}
 			ZStack(alignment: .bottom) {
 				Color.clear
