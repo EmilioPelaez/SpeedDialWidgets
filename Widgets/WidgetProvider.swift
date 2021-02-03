@@ -21,10 +21,13 @@ struct WidgetProvider: IntentTimelineProvider {
 			return completion(demo)
 		}
 		guard !context.isPreview && configuration.altName != "Demo" else {
-			return completion(.placeholder)
+			return completion(.placeholderSmall)
 		}
-		guard !context.isPreview, let contact = configuration.contact, let contactId = contact.identifier, let address = configuration.address?.identifier else {
-			return completion(.empty)
+		guard let contact = configuration.contact, let contactId = contact.identifier else {
+			return completion(WidgetEntry.emptyEntryWithConfiguration(.missingContact))
+		}
+		guard let address = configuration.address?.identifier else {
+			return completion(WidgetEntry.emptyEntryWithConfiguration(.missingAddress))
 		}
 		let processedAddress = processedString(address, for: configuration.connection)
 		let entry = WidgetEntry(date: Date(),
@@ -33,8 +36,8 @@ struct WidgetProvider: IntentTimelineProvider {
 														connection: configuration.connection,
 														background: Background.all[configuration.color.rawValue],
 														urlString: [configuration.connection.scheme, processedAddress].joined(),
-														isEmpty: false,
-														size: configuration.imageSize)
+														size: configuration.imageSize,
+														configurationLevel: .complete)
 		completion(entry)
 	}
 	

@@ -12,8 +12,8 @@ struct WidgetView : View {
 	var entry: WidgetEntry
 	
 	var body: some View {
-		if entry.isEmpty {
-			ConfigurationView()
+		if entry.configurationLevel != .complete {
+			ConfigurationView(configurationLevel: entry.configurationLevel)
 		} else {
 			Group {
 				switch entry.size {
@@ -30,9 +30,6 @@ struct WidgetView : View {
 
 struct WidgetView_Previews: PreviewProvider {
 	static var previews: some View {
-		WidgetView(entry: .empty)
-			.previewContext(WidgetPreviewContext(family: .systemSmall))
-		
 		WidgetView(entry: .placeholderSmall)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 		

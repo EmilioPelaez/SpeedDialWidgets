@@ -50,9 +50,6 @@ struct LargeImageWidgetView : View {
 
 struct LargeImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		LargeImageWidgetView(entry: .empty)
-			.previewContext(WidgetPreviewContext(family: .systemSmall))
-		
 		LargeImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}

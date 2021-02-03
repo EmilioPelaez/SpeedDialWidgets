@@ -9,14 +9,31 @@ import SwiftUI
 import WidgetKit
 
 struct WidgetEntry: TimelineEntry {
+	enum ConfigurationLevel {
+		case complete
+		case missingContact
+		case missingAddress
+	}
+	
 	let date: Date
 	let name: String
 	let image: Image?
 	let connection: Connection
 	let background: Background
 	let urlString: String
-	let isEmpty: Bool
 	let size: ImageSize
+	let configurationLevel: ConfigurationLevel
+	
+	static func emptyEntryWithConfiguration(_ level: ConfigurationLevel) -> WidgetEntry {
+		WidgetEntry(date: Date(),
+								name: "Emilio Peláez",
+								image: nil,
+								connection: .phone,
+								background: Background.all[7],
+								urlString: "example",
+								size: .medium,
+								configurationLevel: level)
+	}
 	
 	static let placeholderSmall = WidgetEntry(date: Date(),
 																						name: "Emilio Peláez",
@@ -24,8 +41,8 @@ struct WidgetEntry: TimelineEntry {
 																						connection: .phone,
 																						background: Background.all[7],
 																						urlString: "example",
-																						isEmpty: false,
-																						size: .small)
+																						size: .small,
+																						configurationLevel: .complete)
 	
 	static let placeholder = WidgetEntry(date: Date(),
 																			 name: "Emilio P.",
@@ -33,8 +50,8 @@ struct WidgetEntry: TimelineEntry {
 																			 connection: .phone,
 																			 background: Background.all[7],
 																			 urlString: "example",
-																			 isEmpty: false,
-																			 size: .medium)
+																			 size: .medium,
+																			 configurationLevel: .complete)
 	
 	static let placeholderLarge = WidgetEntry(date: Date(),
 																						name: "Emilio Peláez",
@@ -42,66 +59,57 @@ struct WidgetEntry: TimelineEntry {
 																						connection: .phone,
 																						background: Background.all[7],
 																						urlString: "example",
-																						isEmpty: false,
-																						size: .large)
-	
-	static let empty = WidgetEntry(date: Date(),
-																 name: "Emilio Peláez",
-																 image: nil,
-																 connection: .phone,
-																 background: Background.all[7],
-																 urlString: "example",
-																 isEmpty: true,
-																 size: .medium)
+																						size: .large,
+																						configurationLevel: .complete)
 	
 	static let demo: [String: WidgetEntry] = [
 		"Demo0": WidgetEntry(date: Date(),
-										name: "Mathilda",
-										image: Image("image-0"),
-										connection: .phone,
-										background: Background.all[1],
-										urlString: "example",
-										isEmpty: false,
-										size: .medium),
+												 name: "Mathilda",
+												 image: Image("image-0"),
+												 connection: .phone,
+												 background: Background.all[1],
+												 urlString: "example",
+												 size: .medium,
+												 configurationLevel: .complete),
 		"Demo1": WidgetEntry(date: Date(),
-										name: "William Carr",
-										image: Image("image-1"),
-										connection: .faceTimeAudio,
-										background: Background.all[2],
-										urlString: "example",
-										isEmpty: false,
-										size: .large),
+												 name: "William Carr",
+												 image: Image("image-1"),
+												 connection: .faceTimeAudio,
+												 background: Background.all[2],
+												 urlString: "example",
+												 size: .large,
+												 configurationLevel: .complete),
 		"Demo2": WidgetEntry(date: Date(),
-										name: "Nicholas Wheeler",
-										image: Image("image-2"),
-										connection: .phone,
-										background: Background.all[3],
-										urlString: "example",
-										isEmpty: false,
-										size: .medium),
+												 name: "Nicholas Wheeler",
+												 image: Image("image-2"),
+												 connection: .phone,
+												 background: Background.all[3],
+												 urlString: "example",
+												 size: .medium,
+												 configurationLevel: .complete),
 		"Demo3": WidgetEntry(date: Date(),
-										name: "Keri McNamara",
-										image: Image("image-3"),
-										connection: .phone,
-										background: Background.all[4],
-										urlString: "example",
-										isEmpty: false,
-										size: .small),
+												 name: "Keri McNamara",
+												 image: Image("image-3"),
+												 connection: .phone,
+												 background: Background.all[4],
+												 urlString: "example",
+												 size: .small,
+												 configurationLevel: .complete),
 		"Demo4": WidgetEntry(date: Date(),
-										name: "Fabien Beaumont",
-										image: Image("image-4"),
-										connection: .phone,
-										background: Background.all[5],
-										urlString: "example",
-										isEmpty: false,
-										size: .medium),
+												 name: "Fabien Beaumont",
+												 image: Image("image-4"),
+												 connection: .phone,
+												 background: Background.all[5],
+												 urlString: "example",
+												 size: .medium,
+												 configurationLevel: .complete),
 		"Demo5": WidgetEntry(date: Date(),
-										name: "Jessie Sykes",
-										image: Image("image-5"),
-										connection: .faceTime,
-										background: Background.all[6],
-										urlString: "example",
-										isEmpty: false,
-										size: .small)
+												 name: "Jessie Sykes",
+												 image: Image("image-5"),
+												 connection: .faceTime,
+												 background: Background.all[6],
+												 urlString: "example",
+												 size: .small,
+												 configurationLevel: .complete)
 	]
 }

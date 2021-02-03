@@ -48,9 +48,6 @@ struct MediumImageWidgetView : View {
 
 struct MediumImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		MediumImageWidgetView(entry: .empty)
-			.previewContext(WidgetPreviewContext(family: .systemSmall))
-		
 		MediumImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}

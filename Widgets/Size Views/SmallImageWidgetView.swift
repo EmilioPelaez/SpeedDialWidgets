@@ -52,9 +52,6 @@ struct SmallImageWidgetView : View {
 
 struct SmallImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		SmallImageWidgetView(entry: .empty)
-			.previewContext(WidgetPreviewContext(family: .systemSmall))
-		
 		SmallImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}

@@ -9,15 +9,20 @@ import SwiftUI
 import WidgetKit
 
 struct ConfigurationView: View {
+	let configurationLevel: WidgetEntry.ConfigurationLevel
+	
 	var body: some View {
-		ZStack {
+		ZStack(alignment: .leading) {
 			LinearGradient(gradient: Background.all[7].gradient, startPoint: .top, endPoint: .bottom)
-			VStack {
+			VStack(alignment: .leading, spacing: 4) {
 				Image(systemName: "hand.tap.fill")
-					.font(.system(size: 30))
-				Text("Tap and Hold, then select Edit Widget.")
-					.font(.system(size: 16, weight: .semibold))
-					.multilineTextAlignment(.center)
+					.font(.system(size: 25))
+				Text("Configuration Required!")
+					.font(.system(size: 14, weight: .semibold))
+					.multilineTextAlignment(.leading)
+				Text(configurationLevel.message)
+					.font(.system(size: 14, weight: .regular))
+					.multilineTextAlignment(.leading)
 			}
 			.padding()
 			.foregroundColor(.white)
@@ -25,9 +30,22 @@ struct ConfigurationView: View {
 	}
 }
 
+extension WidgetEntry.ConfigurationLevel {
+	var message: String {
+		switch self {
+		case .complete: return ""
+		case .missingContact: return "Select a contact"
+		case .missingAddress: return "Select an email or phone."
+		}
+	}
+}
+
 struct ConfigurationView_Previews: PreviewProvider {
 	static var previews: some View {
-		ConfigurationView()
+		ConfigurationView(configurationLevel: .missingAddress)
+			.previewContext(WidgetPreviewContext(family: .systemSmall))
+		
+		ConfigurationView(configurationLevel: .missingContact)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}
 }
