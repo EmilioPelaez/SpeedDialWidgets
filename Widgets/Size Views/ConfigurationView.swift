@@ -13,7 +13,7 @@ struct ConfigurationView: View {
 	
 	var body: some View {
 		ZStack(alignment: .leading) {
-			LinearGradient(gradient: Background.all[7].gradient, startPoint: .top, endPoint: .bottom)
+			LinearGradient(gradient: configurationLevel.background.gradient, startPoint: .top, endPoint: .bottom)
 			VStack(alignment: .leading, spacing: 4) {
 				Image(systemName: "hand.tap.fill")
 					.font(.system(size: 25))
@@ -36,6 +36,14 @@ extension WidgetEntry.ConfigurationLevel {
 		case .complete: return ""
 		case .missingContact: return "Select a contact"
 		case .missingAddress: return "Select an email or phone."
+		}
+	}
+	
+	var background: Background {
+		switch self {
+		case .complete: return Background.all[0]
+		case .missingContact: return Background.all[1]
+		case .missingAddress: return Background.all[2]
 		}
 	}
 }
