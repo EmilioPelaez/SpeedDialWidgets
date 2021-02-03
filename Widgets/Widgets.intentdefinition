@@ -297,7 +297,7 @@
 					<key>INIntentParameterMetadata</key>
 					<dict>
 						<key>INIntentParameterMetadataDefaultValue</key>
-						<string>medium</string>
+						<string>small</string>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>imageSize</string>
