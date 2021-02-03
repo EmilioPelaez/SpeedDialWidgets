@@ -188,6 +188,16 @@
 					<key>INEnumValueName</key>
 					<string>lightGray</string>
 				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Black</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>mpxUi7</string>
+					<key>INEnumValueIndex</key>
+					<integer>9</integer>
+					<key>INEnumValueName</key>
+					<string>black</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -251,9 +261,9 @@
 	<key>INIntentDefinitionSystemVersion</key>
 	<string>20C69</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12D4e</string>
+	<string>12E5220o</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.4</string>
+	<string>12.5</string>
 	<key>INIntents</key>
 	<array>
 		<dict>

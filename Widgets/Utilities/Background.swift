@@ -12,9 +12,9 @@ struct Background {
 	let bottomColor: Color
 	
 	static var all: [Background] =
-		[Background(topColor: Color("ColorTop0"), bottomColor: Color("ColorBottom1"))] +
-		(0..<8)
-		.map { ("ColorTop\($0)", "ColorBottom\($0)") }
+		[Background(topColor: Color("0_BackgroundTop"), bottomColor: Color("0_BackgroundBottom"))] +
+		(0..<9)
+		.map { ("\($0)_BackgroundTop", "\($0)_BackgroundBottom") }
 		.map { (Color($0), Color($1)) }
 		.map(Background.init)
 	
