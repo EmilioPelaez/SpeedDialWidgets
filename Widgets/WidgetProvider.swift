@@ -53,11 +53,11 @@ struct WidgetProvider: IntentTimelineProvider {
 			squared ? image?.square(imageSize) : image?.resized(toFit: CGSize(side: imageSize))
 		}
 		do {
-			let keys = [CNContactImageDataKey].map { $0 as CNKeyDescriptor }
+			let keys = [CNContactThumbnailImageDataKey].map { $0 as CNKeyDescriptor }
 			let predicate: NSPredicate = CNContact.predicateForContacts(withIdentifiers: [identifier])
 			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
 			guard let contact = contacts.first else { return nil }
-			return contact.imageData
+			return contact.thumbnailImageData
 				.flatMap(UIImage.init)
 				.flatMap { resized($0) }
 				.map(Image.init)
