@@ -18,7 +18,7 @@ struct TutorialView: View {
 			ScrollViewReader { scroll in
 				ScrollView {
 					VStack(alignment: .leading, spacing: 15) {
-						Text("Thank you for installing Phone Home Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.")
+						Text("Thank you for installing Speed Dial Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.")
 							.font(.headline)
 							.padding()
 							.background(Color(.secondarySystemBackground))
@@ -36,7 +36,7 @@ struct TutorialView: View {
 						.hidden(currentStep < 1)
 						Group {
 							TutorialStepView(title: "Step 2",
-															 content: "Find \"Phone Home\" in the list and tap on it.",
+															 content: "Find \"Speed Dial\" in the list and tap on it.",
 															 caption: "Tip: You can also use the search bar!",
 															 image: Image("Step2"))
 							Divider()
