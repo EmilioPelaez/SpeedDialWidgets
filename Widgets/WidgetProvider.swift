@@ -13,7 +13,7 @@ struct WidgetProvider: IntentTimelineProvider {
 	let imageSize: CGFloat
 	
 	func placeholder(in context: Context) -> WidgetEntry {
-		.placeholder
+		.placeholderSmall
 	}
 	
 	func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (WidgetEntry) -> ()) {
