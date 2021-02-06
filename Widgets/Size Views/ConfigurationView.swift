@@ -35,7 +35,7 @@ extension WidgetEntry.ConfigurationLevel {
 		switch self {
 		case .complete: return Text("")
 		case .missingContact: return Text("Select a contact")
-		case .missingAddress: return Text("Select an email or phone.")
+		case .missingAddress: return Text("Select an email or phone")
 		}
 	}
 	

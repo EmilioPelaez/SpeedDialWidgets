@@ -53,7 +53,7 @@ class ConfigurationIntentHandler: NSObject, ConfigurationIntentHandling {
 	
 	func provideAddressOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<Address>?, Error?) -> Void) {
 		func handleFailure() {
-			let string = NSLocalizedString("Unable to load phone and email address. Please open the app and try again.", comment: "")
+			let string = NSLocalizedString("Unable to load phone and email address. Please open the app.", comment: "")
 			let emptySection = INObjectSection(title: string, items: [Address]())
 			let collection = INObjectCollection(sections: [emptySection])
 			completion(collection, nil)
