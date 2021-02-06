@@ -26,35 +26,35 @@ struct TutorialView: View {
 							.transition(.slide)
 							.hidden(currentStep > 0)
 						Group {
-							TutorialStepView(title: "Step 1",
-															 content: "On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!",
-															 caption: "Tip: Holding on an empty space is faster!",
+							TutorialStepView(title: Text("Step 1"),
+															 content: Text("On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!"),
+															 caption: Text("Tip: Holding on an empty space is faster!"),
 															 image: Image("Step1"))
 							Divider()
 						}
 						.transition(.slide)
 						.hidden(currentStep < 1)
 						Group {
-							TutorialStepView(title: "Step 2",
-															 content: "Find \"Speed Dial\" in the list and tap on it.",
-															 caption: "Tip: You can also use the search bar!",
+							TutorialStepView(title: Text("Step 2"),
+															 content: Text("Find \"Speed Dial\" in the list and tap on it."),
+															 caption: Text("Tip: You can also use the search bar!"),
 															 image: Image("Step2"))
 							Divider()
 						}
 						.transition(.slide)
 						.hidden(currentStep < 2)
 						Group {
-							TutorialStepView(title: "Step 3",
-															 content: "Tap Add Widget",
-															 caption: "Tip: You can also drag the widget into your Home or Lock Screen!",
+							TutorialStepView(title: Text("Step 3"),
+															 content: Text("Tap Add Widget"),
+															 caption: Text("Tip: You can also drag the widget into your Home or Lock Screen!"),
 															 image: Image("Step3"))
 							Divider()
 						}
 						.transition(.slide)
 						.hidden(currentStep < 3)
 						Group {
-							TutorialStepView(title: "Step 4",
-															 content: "If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget.",
+							TutorialStepView(title: Text("Step 4"),
+															 content: Text("If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget."),
 															 caption: nil,
 															 image: Image("Step4"))
 							Divider()
@@ -62,17 +62,17 @@ struct TutorialView: View {
 						.transition(.slide)
 						.hidden(currentStep < 4)
 						Group {
-							TutorialStepView(title: "Step 5",
-															 content: "Configure your widget with an image size, a color, a contact and your call options.",
-															 caption: "Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!",
+							TutorialStepView(title: Text("Step 5"),
+															 content: Text("Configure your widget with an image size, a color, a contact and your call options."),
+															 caption: Text("Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!"),
 															 image : Image("Step5"))
 							Divider()
 						}
 						.transition(.slide)
 						.hidden(currentStep < 5)
 						Group {
-							TutorialStepView(title: "Done!",
-															 content: "Your widget is ready! Now tap on it whenever you want to make a call!",
+							TutorialStepView(title: Text("Done!"),
+															 content: Text("Your widget is ready! Now tap on it whenever you want to make a call!"),
 															 caption: nil,
 															 image: Image("Step6"))
 						}

@@ -20,7 +20,7 @@ struct ConfigurationView: View {
 				Text("Configuration Required!")
 					.font(.system(size: 14, weight: .semibold))
 					.multilineTextAlignment(.leading)
-				Text(configurationLevel.message)
+				configurationLevel.message
 					.font(.system(size: 14, weight: .regular))
 					.multilineTextAlignment(.leading)
 			}
@@ -31,11 +31,11 @@ struct ConfigurationView: View {
 }
 
 extension WidgetEntry.ConfigurationLevel {
-	var message: String {
+	var message: Text {
 		switch self {
-		case .complete: return ""
-		case .missingContact: return "Select a contact"
-		case .missingAddress: return "Select an email or phone."
+		case .complete: return Text("")
+		case .missingContact: return Text("Select a contact")
+		case .missingAddress: return Text("Select an email or phone.")
 		}
 	}
 	

@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct TutorialStepView: View {
-	let title: String
-	let content: String
-	let caption: String?
+	let title: Text
+	let content: Text
+	let caption: Text?
 	let image: Image
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8) {
-			Text(title)
+			title
 				.font(.title2)
 				.fontWeight(.semibold)
-			Text(content)
+			content
 				.lineLimit(nil)
 				.font(.body)
 			if let caption = caption {
-				Text(caption)
+				caption
 					.lineLimit(nil)
 					.font(.caption)
 			}
@@ -33,8 +33,8 @@ struct TutorialStepView: View {
 
 struct TutorialStepView_Previews: PreviewProvider {
 	static var previews: some View {
-		TutorialStepView(title: "Step 6",
-										 content: "Your widget is ready! Now tap on it whenever you want to make a call!",
+		TutorialStepView(title: Text("Step 6"),
+										 content: Text("Your widget is ready! Now tap on it whenever you want to make a call!"),
 										 caption: nil,
 										 image: Image("Step1"))
 			.frame(width: 300)

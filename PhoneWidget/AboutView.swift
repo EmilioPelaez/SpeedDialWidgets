@@ -15,7 +15,7 @@ struct AboutView: View {
 		let imageName: String
 		let imageSize: CGFloat
 		let color: Color
-		let caption: String
+		let caption: Text
 		
 		var body: some View {
 			VStack(spacing: 3) {
@@ -27,7 +27,7 @@ struct AboutView: View {
 						.background(color)
 						.clipShape(Circle())
 				}
-				Text(caption)
+				caption
 					.font(.caption2)
 					.foregroundColor(.primary)
 			}
@@ -61,17 +61,17 @@ struct AboutView: View {
 												 imageName: "globe",
 												 imageSize: 30,
 												 color: .blue,
-												 caption: "Website")
+												 caption: Text("Website"))
 						SocialButton(action: twitterAction,
 												 imageName: "message.fill",
 												 imageSize: 20,
 												 color: Color(red: 0.11, green: 0.63, blue: 0.95),
-												 caption: "Twitter")
+												 caption: Text("Twitter"))
 						SocialButton(action: appsAction,
 												 imageName: "apps.iphone",
 												 imageSize: 26,
 												 color: .black,
-												 caption: "Apps")
+												 caption: Text("Apps"))
 					}
 				}
 			}
