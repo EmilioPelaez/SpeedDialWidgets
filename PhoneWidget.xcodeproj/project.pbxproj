@@ -43,6 +43,11 @@
 		C85F65F625CF06620079B72D /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C85F65FA25CF06620079B72D /* Widgets.intentdefinition */; };
 		C85F65F725CF06620079B72D /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C85F65FA25CF06620079B72D /* Widgets.intentdefinition */; };
 		C85F65F825CF06620079B72D /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C85F65FA25CF06620079B72D /* Widgets.intentdefinition */; };
+		C85F660C25CF0B9B0079B72D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85F660A25CF0B9B0079B72D /* InfoPlist.strings */; };
+		C85F660F25CF0B9B0079B72D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85F660D25CF0B9B0079B72D /* Localizable.strings */; };
+		C85F661225CF0B9B0079B72D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85F661025CF0B9B0079B72D /* Localizable.strings */; };
+		C85F661625CF0B9B0079B72D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85F661425CF0B9B0079B72D /* InfoPlist.strings */; };
+		C85F661925CF0B9B0079B72D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85F661725CF0B9B0079B72D /* Localizable.strings */; };
 		C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
 		C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3A25C7274A005E5A87 /* ImageFill.swift */; };
 		C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
@@ -120,6 +125,18 @@
 		C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationIntentHandler.swift; sourceTree = "<group>"; };
 		C85F65F425CF065C0079B72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		C85F65F925CF06620079B72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Widgets.intentdefinition; sourceTree = "<group>"; };
+		C85F660B25CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C85F660E25CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C85F661125CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C85F661325CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Widgets.strings"; sourceTree = "<group>"; };
+		C85F661525CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C85F661825CF0B9B0079B72D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C85F661A25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C85F661B25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C85F661C25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C85F661D25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Widgets.strings; sourceTree = "<group>"; };
+		C85F661E25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C85F661F25CF0EFF0079B72D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C865EC3A25C7274A005E5A87 /* ImageFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFill.swift; sourceTree = "<group>"; };
 		C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAvatar.swift; sourceTree = "<group>"; };
 		C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitchingAlertView.swift; sourceTree = "<group>"; };
@@ -211,6 +228,7 @@
 				C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */,
 				C8BA455025BE1A7100C88F9A /* AboutView.swift */,
 				C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */,
+				C85F661025CF0B9B0079B72D /* Localizable.strings */,
 				C84B9D4625BA1A33003DF4A7 /* Assets.xcassets */,
 				C85F65F525CF065C0079B72D /* Info.plist */,
 				C84B9D4825BA1A33003DF4A7 /* Preview Content */,
@@ -249,6 +267,8 @@
 				C85F65FA25CF06620079B72D /* Widgets.intentdefinition */,
 				C84B9D6825BA22BE003DF4A7 /* Assets.xcassets */,
 				C84B9D6A25BA22BE003DF4A7 /* Info.plist */,
+				C85F661725CF0B9B0079B72D /* Localizable.strings */,
+				C85F661425CF0B9B0079B72D /* InfoPlist.strings */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -259,6 +279,8 @@
 				C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */,
 				C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */,
 				C84B9D8A25BA24BB003DF4A7 /* Info.plist */,
+				C85F660D25CF0B9B0079B72D /* Localizable.strings */,
+				C85F660A25CF0B9B0079B72D /* InfoPlist.strings */,
 				C82FDE1E25BA510C00B6D5D2 /* CNContact+Name.swift */,
 				C82FDE2325BA52D700B6D5D2 /* String+Nil.swift */,
 			);
@@ -374,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84B9D4A25BA1A33003DF4A7 /* Preview Assets.xcassets in Resources */,
+				C85F661225CF0B9B0079B72D /* Localizable.strings in Resources */,
 				C84B9D4725BA1A33003DF4A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84B9D6925BA22BE003DF4A7 /* Assets.xcassets in Resources */,
+				C85F661925CF0B9B0079B72D /* Localizable.strings in Resources */,
+				C85F661625CF0B9B0079B72D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F660C25CF0B9B0079B72D /* InfoPlist.strings in Resources */,
+				C85F660F25CF0B9B0079B72D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,8 +505,55 @@
 			isa = PBXVariantGroup;
 			children = (
 				C85F65F925CF06620079B72D /* Base */,
+				C85F661325CF0B9B0079B72D /* es-419 */,
+				C85F661D25CF0EFF0079B72D /* es */,
 			);
 			name = Widgets.intentdefinition;
+			sourceTree = "<group>";
+		};
+		C85F660A25CF0B9B0079B72D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85F660B25CF0B9B0079B72D /* es-419 */,
+				C85F661A25CF0EFF0079B72D /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C85F660D25CF0B9B0079B72D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85F660E25CF0B9B0079B72D /* es-419 */,
+				C85F661B25CF0EFF0079B72D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C85F661025CF0B9B0079B72D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85F661125CF0B9B0079B72D /* es-419 */,
+				C85F661C25CF0EFF0079B72D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C85F661425CF0B9B0079B72D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85F661525CF0B9B0079B72D /* es-419 */,
+				C85F661E25CF0EFF0079B72D /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C85F661725CF0B9B0079B72D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85F661825CF0B9B0079B72D /* es-419 */,
+				C85F661F25CF0EFF0079B72D /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

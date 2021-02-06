@@ -1,0 +1,353 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file source-language="en" target-language="es" datatype="plaintext" original="IntentHandler/en.lproj/InfoPlist.strings">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve"><source>IntentHandler</source>
+<target>IntentHandler</target>
+<note>Bundle display name</note></trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve"><source>Speed Dial</source>
+<target>Speed Dial</target>
+<note>Bundle name</note></trans-unit>
+    </body>
+  </file>
+  <file source-language="en" target-language="es" datatype="plaintext" original="IntentHandler/en.lproj/Localizable.strings">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="Unable to load contacts. Please open the app." xml:space="preserve"><source>Unable to load contacts. Please open the app.</source>
+<target>No se han podido cargar los contactos. Abre la app por favor.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Unable to load phone and email address. Please open the app." xml:space="preserve"><source>Unable to load phone and email address. Please open the app.</source>
+<target>No se han podido cargar los números y correos. Abre la app por favor.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+    </body>
+  </file>
+  <file source-language="en" target-language="es" datatype="plaintext" original="PhoneWidget/en.lproj/Localizable.strings">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="100% free forever. No ads, no subscriptions, no limits." xml:space="preserve"><source>100% free forever. No ads,
+no subscriptions, no limits.</source>
+<target>100% gratis por siempre. Sin anuncios,
+sin subscripciones y sin límites.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Apps" xml:space="preserve"><source>Apps</source>
+<target>Apps</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Configure your widget with an image size, a color, a contact and your call options." xml:space="preserve"><source>Configure your widget with an image size, a color, a contact and your call options.</source>
+<target>Configura tu widget con un tamaño de imagen, un color, un contacto y opciones de contacto.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Created by" xml:space="preserve"><source>Created by</source>
+<target>Creada por</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Done!" xml:space="preserve"><source>Done!</source>
+<target>Listo!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Emilio Peláez" xml:space="preserve"><source>Emilio Peláez</source>
+<target>Emilio Peláez</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Find &quot;Speed Dial&quot; in the list and tap on it." xml:space="preserve"><source>Find "Speed Dial" in the list and tap on it.</source>
+<target>Encuentra "Speed Dial" en la lista y slecciónalo.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Grant Access" xml:space="preserve"><source>Grant Access</source>
+<target>Otorgar Acceso</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget." xml:space="preserve"><source>If your widget is dancing, tap on it to configure it. If it's static, tap and hold, then select Edit Widget.</source>
+<target>Si tu widget está bailando, haz tap para configurarlo. Si está quieto, mantén apretado y luego selecciona Edit Widget.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="In order to create widgets for your contacts we'll need access to your address book." xml:space="preserve"><source>In order to create widgets for your contacts we'll need access to your address book.</source>
+<target>Necesitaremos accesso a tu libreta de direcciones para crear widgets con tus contactos.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!" xml:space="preserve"><source>On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!</source>
+<target>En tu pantalla principal o pantalla de bloqueo, mantén apretado un ícono, un widget o un espacio vacío hasta que veas este ícono en la esquina superior izquierda de tu pantalla. Haz tap en él!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Open Settings" xml:space="preserve"><source>Open Settings</source>
+<target>Abrir Configuración</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 1" xml:space="preserve"><source>Step 1</source>
+<target>Paso 1</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 2" xml:space="preserve"><source>Step 2</source>
+<target>Paso 2</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 3" xml:space="preserve"><source>Step 3</source>
+<target>Paso 3</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 4" xml:space="preserve"><source>Step 4</source>
+<target>Paso 4</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 5" xml:space="preserve"><source>Step 5</source>
+<target>Paso 5</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Step 6" xml:space="preserve"><source>Step 6</source>
+<target>Paso 6</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tap Add Widget" xml:space="preserve"><source>Tap Add Widget</source>
+<target>Presiona Añadir Widget</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tap Call below to make your call!" xml:space="preserve"><source>Tap Call below to make your call!</source>
+<target>Presiona Llamar para hacer tu llamada!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Thank you for installing Speed Dial Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets." xml:space="preserve"><source>Thank you for installing Speed Dial Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.</source>
+<target>Gracias por instalar Speed Dial Widgets! Toda la configuración de los widgets de esta app se hace desde la pantalla de inicio o la pantalla de bloqueo de tu dispositivo. Esta app sólo tiene instrucciones para añadir tus widgets.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="The system doesn't allow us to make calls automatically. (That's a good thing!)" xml:space="preserve"><source>The system doesn't allow us to make calls automatically.
+(That's a good thing!)</source>
+<target>El sistema no nos deja hacer llamadas automáticamente.
+(Eso es bueno!)</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tip: Holding on an empty space is faster!" xml:space="preserve"><source>Tip: Holding on an empty space is faster!</source>
+<target>Tip: Mantener apretado en un espacio vacío es más rápido!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!" xml:space="preserve"><source>Tip: If the name is too long, too short, or you want to use a nickname, use the optional Alternative Name field!</source>
+<target>Tip: Si el nombre es muy largo, muy corto, o si quieres usar un apodo, usa el campo opcional de Nombre Alterno!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tip: You can also drag the widget into your Home or Lock Screen!" xml:space="preserve"><source>Tip: You can also drag the widget into your Home or Lock Screen!</source>
+<target>Tip: También puedes arrastrar el widget a tu pantalla!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Tip: You can also use the search bar!" xml:space="preserve"><source>Tip: You can also use the search bar!</source>
+<target>Tip: También puedes usar la barra de búsqueda!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Twitter" xml:space="preserve"><source>Twitter</source>
+<target>Twitter</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Uh oh!" xml:space="preserve"><source>Uh oh!</source>
+<target>Uh oh!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="We need access to your contacts in order to create widgets. You can grant access from the settings app!" xml:space="preserve"><source>We need access to your contacts in order to create widgets. You can grant access from the settings app!</source>
+<target>Necesitamos accesso a tus contactos para crear tus widgets. Puedes otorgar acceso desde la app de Configuración!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Website" xml:space="preserve"><source>Website</source>
+<target>Página</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Welcome!" xml:space="preserve"><source>Welcome!</source>
+<target>Bienvenido!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Your widget is ready! Now tap on it whenever you want to make a call!" xml:space="preserve"><source>Your widget is ready! Now tap on it whenever you want to make a call!</source>
+<target>Tu widget está listo! Ahora haz tap en él cuando quieras hacer una llamada!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+    </body>
+  </file>
+  <file source-language="en" target-language="es" datatype="plaintext" original="Widgets/Base.lproj/Widgets.intentdefinition">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="0QuY5U" xml:space="preserve"><source>Open in WhatsApp</source>
+<target>Abrir en WhatsApp</target>
+<note/></trans-unit>
+      <trans-unit id="3AKlXz" xml:space="preserve"><source>Phone/Email</source>
+<target>Número/Correo</target>
+<note/></trans-unit>
+      <trans-unit id="4uPUlr" xml:space="preserve"><source>Yellow</source>
+<target>Amarillo</target>
+<note/></trans-unit>
+      <trans-unit id="5v3LBw" xml:space="preserve"><source>Call with FaceTime</source>
+<target>Llamar con FaceTime</target>
+<note/></trans-unit>
+      <trans-unit id="9AfNRB" xml:space="preserve"><source>Contact</source>
+<target>Contacto</target>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-0QuY5U" xml:space="preserve"><source>Just to confirm, you wanted ‘Open in WhatsApp’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-5v3LBw" xml:space="preserve"><source>Just to confirm, you wanted ‘Call with FaceTime’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-Ny0Xqp" xml:space="preserve"><source>Just to confirm, you wanted ‘Open in Telegram’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-ZeKrdT" xml:space="preserve"><source>Just to confirm, you wanted ‘Call with FaceTime Audio’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-bJQ1KL" xml:space="preserve"><source>Just to confirm, you wanted ‘Call by Phone’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-ewOnsb" xml:space="preserve"><source>Just to confirm, you wanted ‘None’?</source>
+<note/></trans-unit>
+      <trans-unit id="9YqQF2-hQl3NH" xml:space="preserve"><source>Just to confirm, you wanted ‘Open in Messages’?</source>
+<note/></trans-unit>
+      <trans-unit id="DhpX2K-fVuevc" xml:space="preserve"><source>There are ${count} options matching ‘S’.</source>
+<note/></trans-unit>
+      <trans-unit id="DhpX2K-uLgjVG" xml:space="preserve"><source>There are ${count} options matching ‘L’.</source>
+<note/></trans-unit>
+      <trans-unit id="DhpX2K-ukr3pG" xml:space="preserve"><source>There are ${count} options matching ‘M’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-4uPUlr" xml:space="preserve"><source>There are ${count} options matching ‘Yellow’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-Yp0yFf" xml:space="preserve"><source>There are ${count} options matching ‘Unknown’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-dJt7YW" xml:space="preserve"><source>There are ${count} options matching ‘Red’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-ihfzIN" xml:space="preserve"><source>There are ${count} options matching ‘Purple’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-lPJgav" xml:space="preserve"><source>There are ${count} options matching ‘Blue’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-lRIeRm" xml:space="preserve"><source>There are ${count} options matching ‘Light Gray’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-mIyPpz" xml:space="preserve"><source>There are ${count} options matching ‘Green’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-mpxUi7" xml:space="preserve"><source>There are ${count} options matching ‘Black’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-pOEXTv" xml:space="preserve"><source>There are ${count} options matching ‘Orange’.</source>
+<note/></trans-unit>
+      <trans-unit id="Eg0eeR-zxaSCf" xml:space="preserve"><source>There are ${count} options matching ‘Dark Gray’.</source>
+<note/></trans-unit>
+      <trans-unit id="ItzGlh" xml:space="preserve"><source>Size</source>
+<target>Tamaño</target>
+<note/></trans-unit>
+      <trans-unit id="JxlZV0-fVuevc" xml:space="preserve"><source>Just to confirm, you wanted ‘S’?</source>
+<note/></trans-unit>
+      <trans-unit id="JxlZV0-uLgjVG" xml:space="preserve"><source>Just to confirm, you wanted ‘L’?</source>
+<note/></trans-unit>
+      <trans-unit id="JxlZV0-ukr3pG" xml:space="preserve"><source>Just to confirm, you wanted ‘M’?</source>
+<note/></trans-unit>
+      <trans-unit id="Ny0Xqp" xml:space="preserve"><source>Open in Telegram</source>
+<target>Abrir en Telegram</target>
+<note/></trans-unit>
+      <trans-unit id="PrQ8Kh" xml:space="preserve"><source>Alternative Name (Optional)</source>
+<target>Nombre Alterno (Opcional)</target>
+<note/></trans-unit>
+      <trans-unit id="TK8dzY" xml:space="preserve"><source>Color</source>
+<target>Color</target>
+<note/></trans-unit>
+      <trans-unit id="Yp0yFf" xml:space="preserve"><source>Unknown</source>
+<target>Desconocido</target>
+<note/></trans-unit>
+      <trans-unit id="ZeKrdT" xml:space="preserve"><source>Call with FaceTime Audio</source>
+<target>Llamar con FaceTime Audio</target>
+<note/></trans-unit>
+      <trans-unit id="bJQ1KL" xml:space="preserve"><source>Call by Phone</source>
+<target>Llamar por Teléfono</target>
+<note/></trans-unit>
+      <trans-unit id="c7GURW" xml:space="preserve"><source>Color</source>
+<target>Color</target>
+<note/></trans-unit>
+      <trans-unit id="dJt7YW" xml:space="preserve"><source>Red</source>
+<target>Rojo</target>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-4uPUlr" xml:space="preserve"><source>Just to confirm, you wanted ‘Yellow’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-Yp0yFf" xml:space="preserve"><source>Just to confirm, you wanted ‘Unknown’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-dJt7YW" xml:space="preserve"><source>Just to confirm, you wanted ‘Red’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-ihfzIN" xml:space="preserve"><source>Just to confirm, you wanted ‘Purple’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-lPJgav" xml:space="preserve"><source>Just to confirm, you wanted ‘Blue’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-lRIeRm" xml:space="preserve"><source>Just to confirm, you wanted ‘Light Gray’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-mIyPpz" xml:space="preserve"><source>Just to confirm, you wanted ‘Green’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-mpxUi7" xml:space="preserve"><source>Just to confirm, you wanted ‘Black’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-pOEXTv" xml:space="preserve"><source>Just to confirm, you wanted ‘Orange’?</source>
+<note/></trans-unit>
+      <trans-unit id="eVvuID-zxaSCf" xml:space="preserve"><source>Just to confirm, you wanted ‘Dark Gray’?</source>
+<note/></trans-unit>
+      <trans-unit id="edG19j" xml:space="preserve"><source>Action</source>
+<target>Acción</target>
+<note/></trans-unit>
+      <trans-unit id="ewOnsb" xml:space="preserve"><source>None</source>
+<target>Ninguno</target>
+<note/></trans-unit>
+      <trans-unit id="fVuevc" xml:space="preserve"><source>S</source>
+<target>Ch</target>
+<note/></trans-unit>
+      <trans-unit id="gpCwrM" xml:space="preserve"><source>Configuration</source>
+<target>Configuración</target>
+<note/></trans-unit>
+      <trans-unit id="hQl3NH" xml:space="preserve"><source>Open in Messages</source>
+<target>Abrir en Mensajes</target>
+<note/></trans-unit>
+      <trans-unit id="ihfzIN" xml:space="preserve"><source>Purple</source>
+<target>Morado</target>
+<note/></trans-unit>
+      <trans-unit id="jZhccx" xml:space="preserve"><source>Phone/Email</source>
+<target>Número/Correo</target>
+<note/></trans-unit>
+      <trans-unit id="kvxd28" xml:space="preserve"><source>Contact</source>
+<target>Contacto</target>
+<note/></trans-unit>
+      <trans-unit id="lPJgav" xml:space="preserve"><source>Blue</source>
+<target>Azul</target>
+<note/></trans-unit>
+      <trans-unit id="lRIeRm" xml:space="preserve"><source>Light Gray</source>
+<target>Gris Claro</target>
+<note/></trans-unit>
+      <trans-unit id="mIyPpz" xml:space="preserve"><source>Green</source>
+<target>Verde</target>
+<note/></trans-unit>
+      <trans-unit id="mpxUi7" xml:space="preserve"><source>Black</source>
+<target>Negro</target>
+<note/></trans-unit>
+      <trans-unit id="njbHAu" xml:space="preserve"><source>Action</source>
+<target>Acción</target>
+<note/></trans-unit>
+      <trans-unit id="pOEXTv" xml:space="preserve"><source>Orange</source>
+<target>Naranja</target>
+<note/></trans-unit>
+      <trans-unit id="q176kH-0QuY5U" xml:space="preserve"><source>There are ${count} options matching ‘Open in WhatsApp’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-5v3LBw" xml:space="preserve"><source>There are ${count} options matching ‘Call with FaceTime’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-Ny0Xqp" xml:space="preserve"><source>There are ${count} options matching ‘Open in Telegram’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-ZeKrdT" xml:space="preserve"><source>There are ${count} options matching ‘Call with FaceTime Audio’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-bJQ1KL" xml:space="preserve"><source>There are ${count} options matching ‘Call by Phone’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-ewOnsb" xml:space="preserve"><source>There are ${count} options matching ‘None’.</source>
+<note/></trans-unit>
+      <trans-unit id="q176kH-hQl3NH" xml:space="preserve"><source>There are ${count} options matching ‘Open in Messages’.</source>
+<note/></trans-unit>
+      <trans-unit id="uLgjVG" xml:space="preserve"><source>L</source>
+<target>G</target>
+<note/></trans-unit>
+      <trans-unit id="ukr3pG" xml:space="preserve"><source>M</source>
+<target>M</target>
+<note/></trans-unit>
+      <trans-unit id="v5JTLJ" xml:space="preserve"><source>Image Size</source>
+<target>Tamaño de Imagen</target>
+<note/></trans-unit>
+      <trans-unit id="zxaSCf" xml:space="preserve"><source>Dark Gray</source>
+<target>Gris Oscuro</target>
+<note/></trans-unit>
+    </body>
+  </file>
+  <file source-language="en" target-language="es" datatype="plaintext" original="Widgets/en.lproj/InfoPlist.strings">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve"><source>Widgets</source>
+<target>Widgets</target>
+<note>Bundle display name</note></trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve"><source>Speed Dial</source>
+<target>Speed Dial</target>
+<note>Bundle name</note></trans-unit>
+    </body>
+  </file>
+  <file source-language="en" target-language="es" datatype="plaintext" original="Widgets/en.lproj/Localizable.strings">
+    <header>
+      <tool build-num="12E5220o" tool-version="12.5" tool-id="com.apple.dt.xcode" tool-name="Xcode"/>
+    </header>
+    <body>
+      <trans-unit id="Add a contact to your Home or Lock Screen to reach them quickly." xml:space="preserve"><source>Add a contact to your Home or Lock Screen to reach them quickly.</source>
+<target>Agrega a un contacto a tu pantalla principal o la pantalla de bloqueo para comunicarte con ellos rápidamente.</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Configuration Required!" xml:space="preserve"><source>Configuration Required!</source>
+<target>Configuración Requerida!</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Contact Widget" xml:space="preserve"><source>Contact Widget</source>
+<target>Widget de Contacto</target>
+<note>Title. Contact as in address book.</note></trans-unit>
+      <trans-unit id="Select a contact" xml:space="preserve"><source>Select a contact</source>
+<target>Selecciona un contacto</target>
+<note>No comment provided by engineer.</note></trans-unit>
+      <trans-unit id="Select an email or phone" xml:space="preserve"><source>Select an email or phone</source>
+<target>Selecciona un correo o número telefónico</target>
+<note>No comment provided by engineer.</note></trans-unit>
+    </body>
+  </file>
+</xliff>
