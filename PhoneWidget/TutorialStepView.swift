@@ -26,7 +26,9 @@ struct TutorialStepView: View {
 					.lineLimit(nil)
 					.font(.caption)
 			}
-			image.resizable().aspectRatio(contentMode: .fill)
+			image
+				.resizable()
+				.aspectRatio(contentMode: .fit)
 		}
 	}
 }
