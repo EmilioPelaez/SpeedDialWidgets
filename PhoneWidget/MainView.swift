@@ -20,6 +20,7 @@ struct MainView: View {
 	@Environment(\.scenePhase) private var scenePhase
 	@State var authorization = CNContactStore.authorizationStatus(for: .contacts)
 	@State var showMessage: Message = .none
+	@State var reviewShown = false
 	
 	var body: some View {
 		Group {
@@ -55,10 +56,10 @@ struct MainView: View {
 			}
 		})
 		.onChange(of: scenePhase, perform: { value in
+			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			if self.showMessage == .none, value == .active {
 				showRateAlert()
 			}
-			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			if self.showMessage == .call, value == .active {
 				withAnimation {
 					self.showMessage = .none
@@ -70,12 +71,19 @@ struct MainView: View {
 	}
 	
 	func showRateAlert() {
+		guard !reviewShown else { return }
+		reviewShown = true
+		let key = "Review Prompt Shown Date"
+		if let date = UserDefaults.standard.object(forKey: key) as? Date, date > Date().addingTimeInterval(60 * 60 * 24 * 7 * -1) {
+			return
+		}
 		WidgetCenter.shared.getCurrentConfigurations { result in
 			DispatchQueue.main.async {
 				guard case .success(let widgets) = result,
 							!widgets.isEmpty,
 							let scene = UIApplication.shared.windows.first?.windowScene else { return }
 				SKStoreReviewController.requestReview(in: scene)
+				UserDefaults.standard.set(Date(), forKey: key)
 			}
 		}
 	}
