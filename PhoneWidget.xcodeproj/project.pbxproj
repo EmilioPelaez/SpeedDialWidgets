@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,7 @@
 		C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
 		C865EC4525C73B5E005E5A87 /* AppSwitchingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */; };
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
+		C8EACA82262CB3B9002FDC7C /* KernelDirectoryUI in Frameworks */ = {isa = PBXBuildFile; productRef = C8EACA81262CB3B9002FDC7C /* KernelDirectoryUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EACA82262CB3B9002FDC7C /* KernelDirectoryUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +287,7 @@
 			);
 			name = PhoneWidget;
 			packageProductDependencies = (
+				C8EACA81262CB3B9002FDC7C /* KernelDirectoryUI */,
 			);
 			productName = PhoneWidget;
 			productReference = C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */;
@@ -354,6 +357,7 @@
 			);
 			mainGroup = C84B9D3625BA1A32003DF4A7;
 			packageReferences = (
+				C8EACA80262CB3B9002FDC7C /* XCRemoteSwiftPackageReference "KernelDirectoryUI" */,
 			);
 			productRefGroup = C84B9D4025BA1A32003DF4A7 /* Products */;
 			projectDirPath = "";
@@ -750,6 +754,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8EACA80262CB3B9002FDC7C /* XCRemoteSwiftPackageReference "KernelDirectoryUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmilioPelaez/KernelDirectoryUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8EACA81262CB3B9002FDC7C /* KernelDirectoryUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8EACA80262CB3B9002FDC7C /* XCRemoteSwiftPackageReference "KernelDirectoryUI" */;
+			productName = KernelDirectoryUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C84B9D3725BA1A32003DF4A7 /* Project object */;
 }

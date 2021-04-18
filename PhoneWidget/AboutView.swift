@@ -5,9 +5,12 @@
 //  Created by Emilio Peláez on 24/01/21.
 //
 
+import KernelDirectoryUI
 import SwiftUI
 
 struct AboutView: View {
+	let client = KernelClient(appId: "1550574694")
+	
 	@Binding var showAbout: Bool
 	
 	struct SocialButton: View {
@@ -35,48 +38,9 @@ struct AboutView: View {
 	}
 	
 	var body: some View {
-		ZStack {
-			Color.clear
-			VStack(spacing: 30) {
-				ZStack(alignment: .bottom) {
-					RoundedRectangle(cornerRadius: 20)
-						.fill(Color(.red))
-						.frame(width: 90, height: 5)
-						.padding(.bottom, 15)
-						.shadow(color: Color(white: 0, opacity: 1), radius: 5, x: 0, y: 15)
-					Image("Icon")
-						.resizable()
-						.frame(width: 100, height: 100)
-						.clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-				}
-				VStack(spacing: 20) {
-					VStack {
-						Text("Created by")
-							.font(.callout)
-						Text("Emilio Peláez")
-							.font(.title)
-					}
-					HStack(spacing: 20) {
-						SocialButton(action: webAction,
-												 imageName: "globe",
-												 imageSize: 30,
-												 color: .blue,
-												 caption: "Website")
-						SocialButton(action: twitterAction,
-												 imageName: "message.fill",
-												 imageSize: 20,
-												 color: Color(red: 0.11, green: 0.63, blue: 0.95),
-												 caption: "Twitter")
-						SocialButton(action: appsAction,
-												 imageName: "apps.iphone",
-												 imageSize: 26,
-												 color: .black,
-												 caption: "Apps")
-					}
-				}
-			}
-			ZStack(alignment: .topLeading) {
-				Color.clear
+		ZStack(alignment: .topLeading) {
+//			Color.clear
+			VStack(alignment: .leading, spacing: 50) {
 				Button {
 					self.showAbout = false
 				} label: {
@@ -90,13 +54,44 @@ struct AboutView: View {
 						.padding(7)
 				}
 				.padding(7)
-			}
-			ZStack(alignment: .bottom) {
-				Color.clear
-				Text("100% free forever. No ads,\nno subscriptions, no limits.")
-					.multilineTextAlignment(.center)
-					.font(.footnote)
+				HStack(alignment: .top, spacing: 30) {
+					ZStack(alignment: .bottom) {
+						RoundedRectangle(cornerRadius: 20)
+							.fill(Color(.red))
+							.frame(width: 90, height: 5)
+							.padding(.bottom, 15)
+							.shadow(color: Color(white: 0, opacity: 1), radius: 5, x: 0, y: 15)
+						Image("Icon")
+							.resizable()
+							.frame(width: 100, height: 100)
+							.clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+					}
+					VStack(alignment: .leading, spacing: 10) {
+						VStack(alignment: .leading) {
+							Text("Created by")
+								.font(.callout)
+							Text("Emilio Peláez")
+								.font(.title)
+						}
+						HStack(spacing: 20) {
+							SocialButton(action: webAction,
+													 imageName: "globe",
+													 imageSize: 30,
+													 color: .blue,
+													 caption: "Website")
+							SocialButton(action: twitterAction,
+													 imageName: "message.fill",
+													 imageSize: 20,
+													 color: Color(red: 0.11, green: 0.63, blue: 0.95),
+													 caption: "Twitter")
+						}
+					}
+					Spacer()
+				}
+				.padding()
+				DirectoryFeaturedView(client: client) { }
 					.padding()
+				Spacer()
 			}
 		}
 	}
