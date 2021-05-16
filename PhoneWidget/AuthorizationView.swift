@@ -15,9 +15,6 @@ struct AuthorizationView: View {
 	var body: some View {
 		VStack(spacing: 25) {
 			Image("Contacts")
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-				.frame(width: 200)
 			switch authorization {
 			case .notDetermined:
 				AuthorizationContent(title: "Welcome!",

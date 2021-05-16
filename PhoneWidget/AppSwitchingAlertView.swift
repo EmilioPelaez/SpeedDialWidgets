@@ -11,17 +11,7 @@ struct AppSwitchingAlertView: View {
 	var body: some View {
 		ZStack {
 			Color.clear
-			VStack(spacing: 10) {
-				ZStack {
-					VStack(alignment: .trailing) {
-						Image("Messages")
-							.resizable()
-							.aspectRatio(contentMode: .fit)
-					}
-					.padding()
-				}
-			}
-			.padding()
+			Image("Messages")
 		}
 		.background(
 			Color(.systemGroupedBackground).ignoresSafeArea()
