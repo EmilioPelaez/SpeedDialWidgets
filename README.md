@@ -1,11 +1,14 @@
-# Home Phone Widgets (Codename PhoneWidget)
+![Capsule Logo](./logo.png)
+# Speed Dial Widgets
 
-Phone Home Widgets is a completely free (and Open Source) app that lets you create widgets to quickly call your favorite contacts.
+Your contacts right on your Home Screen!
+
+Speed Dial Widgets is a completely free app that lets you create widgets to quickly connect with your favorite contacts.
 
 - Choose between three layouts to focus on your contacts' photos, or their names.
-- Pick your preferred contact method, Phone, FaceTime or FaceTime Audio.
+- Pick your preferred call method: Phone, FaceTime or FaceTime Audio.
+- Or choose to launch Messages, WhatsApp or Telegram.
 - Use a nickname or alternative name on your widget. Add some emojis!
 - Add as many widgets as you can fit on your Home Screen, for free!
-- Confirm the call after tapping on the widget to avoid accidental calls.
+- Confirm the call (Required by the device) after tapping on the widget to avoid accidental calls.
 
-[AppStore Link](https://apps.apple.com/us/app/phone-home-widgets/id1550574694)
