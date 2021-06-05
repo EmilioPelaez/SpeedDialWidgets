@@ -1,4 +1,4 @@
-![Capsule Logo](./logo.png)
+![Logo](./Icon.png)
 # Speed Dial Widgets
 
 Your contacts right on your Home Screen!
