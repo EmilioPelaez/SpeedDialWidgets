@@ -14,7 +14,7 @@ struct MediumImageWidgetView : View {
 	var body: some View {
 		ZStack {
 			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
-			VStack(spacing: 4) {
+			VStack(alignment: .leading, spacing: 4) {
 				Group {
 					if let image = entry.image {
 						ImageFill(image: image, contentMode: .fill)
@@ -23,21 +23,19 @@ struct MediumImageWidgetView : View {
 					}
 				}
 				.clipShape(ContainerRelativeShape())
-				VStack(spacing: 0) {
-					HStack {
-						Text(entry.name)
-							.lineLimit(1)
-							.font(.system(size: 18, weight: .semibold, design: .default))
-						Spacer()
-					}
+				VStack(alignment: .leading, spacing: 0) {
+					Text(entry.name)
+						.lineLimit(1)
+						.font(.headline)
+						.minimumScaleFactor(0.5)
 					HStack(spacing: 4) {
 						entry.connection.image
 						Text(entry.connection.name)
 							.lineLimit(1)
-						Spacer()
 					}
-					.font(.system(size: 14, weight: .bold, design: .default))
+					.font(.footnote.bold())
 					.opacity(0.5)
+					
 				}
 			}
 			.padding()

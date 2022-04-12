@@ -223,7 +223,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>S</string>
+					<string>Circle</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>fVuevc</string>
 					<key>INEnumValueIndex</key>
@@ -233,7 +233,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>M</string>
+					<string>Rectangle</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>ukr3pG</string>
 					<key>INEnumValueIndex</key>
@@ -243,7 +243,7 @@
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
-					<string>L</string>
+					<string>Full Image</string>
 					<key>INEnumValueDisplayNameID</key>
 					<string>uLgjVG</string>
 					<key>INEnumValueIndex</key>
@@ -259,11 +259,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>88xZPY</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20C69</string>
+	<string>21E258</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12E5220o</string>
+	<string>13E113</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.5</string>
+	<string>13.3</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -285,7 +285,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Image Size</string>
+					<string>Layout</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>v5JTLJ</string>
 					<key>INIntentParameterDisplayPriority</key>
