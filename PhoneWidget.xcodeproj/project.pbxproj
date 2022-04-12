@@ -20,12 +20,12 @@
 		C82FDE6825BDA80000B6D5D2 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */; };
 		C82FDE7025BDAB9500B6D5D2 /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */; };
 		C837D02C25BA31E200FB1D48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D02425BA31DF00FB1D48 /* Background.swift */; };
-		C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */; };
+		C837D04625BA350000FB1D48 /* CircleImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D04025BA335300FB1D48 /* CircleImageWidgetView.swift */; };
 		C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
-		C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */; };
+		C837D06F25BA3B7300FB1D48 /* RectangleImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D06E25BA3B7300FB1D48 /* RectangleImageWidgetView.swift */; };
 		C837D07425BA3B9B00FB1D48 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */; };
 		C837D07925BA3BB800FB1D48 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */; };
-		C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */; };
+		C837D08625BA3D7100FB1D48 /* FullImageWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D08525BA3D7100FB1D48 /* FullImageWidgetView.swift */; };
 		C840F5C925C01C15008323A6 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840F5C825C01C15008323A6 /* AuthorizationView.swift */; };
 		C84B9D4325BA1A32003DF4A7 /* PhoneWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */; };
 		C84B9D4525BA1A32003DF4A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D4425BA1A32003DF4A7 /* MainView.swift */; };
@@ -96,12 +96,12 @@
 		C82FDE6725BDA80000B6D5D2 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
 		C82FDE6F25BDAB9500B6D5D2 /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
 		C837D02425BA31DF00FB1D48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageWidgetView.swift; sourceTree = "<group>"; };
+		C837D04025BA335300FB1D48 /* CircleImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageWidgetView.swift; sourceTree = "<group>"; };
 		C837D05E25BA376200FB1D48 /* Connection+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+UI.swift"; sourceTree = "<group>"; };
-		C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumImageWidgetView.swift; sourceTree = "<group>"; };
+		C837D06E25BA3B7300FB1D48 /* RectangleImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleImageWidgetView.swift; sourceTree = "<group>"; };
 		C837D07325BA3B9B00FB1D48 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
 		C837D07825BA3BB800FB1D48 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
-		C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageWidgetView.swift; sourceTree = "<group>"; };
+		C837D08525BA3D7100FB1D48 /* FullImageWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageWidgetView.swift; sourceTree = "<group>"; };
 		C840F5C825C01C15008323A6 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		C84B9D3F25BA1A32003DF4A7 /* PhoneWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B9D4225BA1A32003DF4A7 /* PhoneWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidgetApp.swift; sourceTree = "<group>"; };
@@ -159,9 +159,9 @@
 		C837D03625BA330300FB1D48 /* Size Views */ = {
 			isa = PBXGroup;
 			children = (
-				C837D04025BA335300FB1D48 /* SmallImageWidgetView.swift */,
-				C837D06E25BA3B7300FB1D48 /* MediumImageWidgetView.swift */,
-				C837D08525BA3D7100FB1D48 /* LargeImageWidgetView.swift */,
+				C837D04025BA335300FB1D48 /* CircleImageWidgetView.swift */,
+				C837D06E25BA3B7300FB1D48 /* RectangleImageWidgetView.swift */,
+				C837D08525BA3D7100FB1D48 /* FullImageWidgetView.swift */,
 				C82FDE1925BA4DEA00B6D5D2 /* ConfigurationView.swift */,
 			);
 			path = "Size Views";
@@ -422,14 +422,14 @@
 			files = (
 				C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */,
 				C82FDE1A25BA4DEA00B6D5D2 /* ConfigurationView.swift in Sources */,
-				C837D06F25BA3B7300FB1D48 /* MediumImageWidgetView.swift in Sources */,
-				C837D08625BA3D7100FB1D48 /* LargeImageWidgetView.swift in Sources */,
+				C837D06F25BA3B7300FB1D48 /* RectangleImageWidgetView.swift in Sources */,
+				C837D08625BA3D7100FB1D48 /* FullImageWidgetView.swift in Sources */,
 				C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
 				C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */,
 				C82FDE0725BA447F00B6D5D2 /* UIImage+Resize.swift in Sources */,
 				C837D05F25BA376300FB1D48 /* Connection+UI.swift in Sources */,
-				C837D04625BA350000FB1D48 /* SmallImageWidgetView.swift in Sources */,
+				C837D04625BA350000FB1D48 /* CircleImageWidgetView.swift in Sources */,
 				C82FDE4D25BAD08D00B6D5D2 /* String+Nil.swift in Sources */,
 				C82FDE2C25BACBB200B6D5D2 /* PhoneWidget.swift in Sources */,
 				C837D02C25BA31E200FB1D48 /* Background.swift in Sources */,

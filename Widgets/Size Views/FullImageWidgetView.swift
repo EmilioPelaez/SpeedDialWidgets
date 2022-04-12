@@ -1,5 +1,5 @@
 //
-//  LargeImageWidgetView.swift
+//  FullImageWidgetView.swift
 //  WidgetsExtension
 //
 //  Created by Emilio Peláez on 21/01/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct LargeImageWidgetView : View {
+struct FullImageWidgetView : View {
 	var entry: WidgetEntry
 	
 	var body: some View {
@@ -44,7 +44,7 @@ struct LargeImageWidgetView : View {
 
 struct LargeImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		LargeImageWidgetView(entry: .placeholder)
+		FullImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}
 }

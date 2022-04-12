@@ -1,5 +1,5 @@
 //
-//  SmallImageWidgetView.swift
+//  CircleImageWidgetView.swift
 //  IntentHandler
 //
 //  Created by Emilio Peláez on 21/01/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct SmallImageWidgetView : View {
+struct CircleImageWidgetView : View {
 	var entry: WidgetEntry
 	
 	@ViewBuilder
@@ -51,7 +51,7 @@ struct SmallImageWidgetView : View {
 
 struct SmallImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		SmallImageWidgetView(entry: .placeholder)
+		CircleImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}
 }

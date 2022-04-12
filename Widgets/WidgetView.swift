@@ -17,10 +17,10 @@ struct WidgetView : View {
 		} else {
 			Group {
 				switch entry.size {
-				case .small: SmallImageWidgetView(entry: entry)
-				case .medium: MediumImageWidgetView(entry: entry)
-				case .large: LargeImageWidgetView(entry: entry)
-				case _: MediumImageWidgetView(entry: entry)
+				case .small: CircleImageWidgetView(entry: entry)
+				case .medium: RectangleImageWidgetView(entry: entry)
+				case .large: FullImageWidgetView(entry: entry)
+				case _: RectangleImageWidgetView(entry: entry)
 				}
 			}
 			.widgetURL(URL(string: entry.urlString))

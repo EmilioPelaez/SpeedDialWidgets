@@ -1,5 +1,5 @@
 //
-//  MediumImageWidgetView.swift
+//  RectangleImageWidgetView.swift
 //  WidgetsExtension
 //
 //  Created by Emilio Peláez on 21/01/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct MediumImageWidgetView : View {
+struct RectangleImageWidgetView : View {
 	var entry: WidgetEntry
 	
 	var body: some View {
@@ -46,7 +46,7 @@ struct MediumImageWidgetView : View {
 
 struct MediumImageWidget_Previews: PreviewProvider {
 	static var previews: some View {
-		MediumImageWidgetView(entry: .placeholder)
+		RectangleImageWidgetView(entry: .placeholder)
 			.previewContext(WidgetPreviewContext(family: .systemSmall))
 	}
 }
