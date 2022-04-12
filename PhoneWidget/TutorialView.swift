@@ -18,13 +18,12 @@ struct TutorialView: View {
 			ScrollViewReader { scroll in
 				ScrollView {
 					VStack(alignment: .leading, spacing: 15) {
-						Text("Thank you for installing Speed Dial Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.")
-							.font(.headline)
-							.padding()
-							.background(Color(.secondarySystemBackground))
-							.cornerRadius(10)
-							.transition(.slide)
-							.hidden(currentStep > 0)
+						GroupBox {
+							Text("Thank you for installing Speed Dial Widgets! All the configuration for the widgets provided by this app is done from the Home Screen or the Lock Screen of your device. The app only holds instructions to add your widgets.")
+								.font(.headline)
+						}
+						.transition(.opacity)
+						.hidden(currentStep > 0)
 						Group {
 							TutorialStepView(title: "Step 1",
 															 content: "On your Home Screen or the Lock Screen, tap and hold on an Icon, Widget or an empty space until you see this icon on the top left of your screen. Tap it!",
@@ -32,7 +31,7 @@ struct TutorialView: View {
 															 image: Image("Step1"))
 							Divider()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 1)
 						Group {
 							TutorialStepView(title: "Step 2",
@@ -41,7 +40,7 @@ struct TutorialView: View {
 															 image: Image("Step2"))
 							Divider()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 2)
 						Group {
 							TutorialStepView(title: "Step 3",
@@ -50,7 +49,7 @@ struct TutorialView: View {
 															 image: Image("Step3"))
 							Divider()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 3)
 						Group {
 							TutorialStepView(title: "Step 4",
@@ -59,7 +58,7 @@ struct TutorialView: View {
 															 image: Image("Step4"))
 							Divider()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 4)
 						Group {
 							TutorialStepView(title: "Step 5",
@@ -68,7 +67,7 @@ struct TutorialView: View {
 															 image : Image("Step5"))
 							Divider()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 5)
 						Group {
 							TutorialStepView(title: "Done!",
@@ -76,7 +75,7 @@ struct TutorialView: View {
 															 caption: nil,
 															 image: Image("Step6"))
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						.hidden(currentStep < 6)
 						HStack {
 							Spacer()
@@ -105,20 +104,19 @@ struct TutorialView: View {
 							.padding()
 							Spacer()
 						}
-						.transition(.slide)
+						.transition(.move(edge: .bottom).combined(with: .opacity))
 						Spacer()
 							.id("Bottom")
 					}
 					.padding()
 					.navigationTitle("How to Use")
-					.navigationBarItems(leading:
-																Button {
-																	self.showAbout = true
-																} label: {
-																	Image(systemName: "info.circle.fill")
-																		.font(.title2)
-																}
-					)
+					.toolbar {
+						Button {
+							self.showAbout = true
+						} label: {
+							Image(systemName: "info.circle.fill")
+						}
+					}
 					.sheet(isPresented: $showAbout) {
 						AboutView(showAbout: $showAbout)
 					}

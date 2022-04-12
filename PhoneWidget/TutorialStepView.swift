@@ -37,10 +37,10 @@ struct TutorialStepView_Previews: PreviewProvider {
 	static var previews: some View {
 		TutorialStepView(title: "Step 6",
 										 content: "Your widget is ready! Now tap on it whenever you want to make a call!",
-										 caption: nil,
+										 caption: "Hello World!",
 										 image: Image("Step1"))
 			.frame(width: 300)
 			.padding()
-//			.previewLayout(.sizeThatFits)
+			.previewLayout(.sizeThatFits)
 	}
 }
