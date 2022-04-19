@@ -74,7 +74,7 @@ struct WidgetEntry: TimelineEntry {
 		"Demo1": WidgetEntry(date: Date(),
 												 name: "William Carr",
 												 image: Image("image-1"),
-												 connection: .faceTime,
+												 connection: .whatsapp,
 												 background: Background.all[2],
 												 urlString: "example",
 												 size: .large,
