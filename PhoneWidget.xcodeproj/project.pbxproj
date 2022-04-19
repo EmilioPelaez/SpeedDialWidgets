@@ -66,6 +66,7 @@
 		C8F3A235280F532700C1DC3F /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
 		C8F3A236280F534B00C1DC3F /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C8F3A238280F537B00C1DC3F /* WidgetPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3A237280F537B00C1DC3F /* WidgetPreview.swift */; };
+		C8F3A240280F568B00C1DC3F /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3A23F280F568B00C1DC3F /* Screenshots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C84B9D8325BA24BB003DF4A7;
 			remoteInfo = IntentHandler;
+		};
+		C8F3A243280F568B00C1DC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84B9D3725BA1A32003DF4A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84B9D3E25BA1A32003DF4A7;
+			remoteInfo = PhoneWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -148,6 +156,8 @@
 		C8F3A223280F52EA00C1DC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F3A226280F52EA00C1DC3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8F3A237280F537B00C1DC3F /* WidgetPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPreview.swift; sourceTree = "<group>"; };
+		C8F3A23D280F568B00C1DC3F /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F3A23F280F568B00C1DC3F /* Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +187,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C8F3A21A280F52E900C1DC3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F3A23A280F568B00C1DC3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +234,7 @@
 				C84B9D6425BA22BD003DF4A7 /* Widgets */,
 				C84B9D8725BA24BB003DF4A7 /* IntentHandler */,
 				C8F3A21E280F52E900C1DC3F /* WidgetPreview */,
+				C8F3A23E280F568B00C1DC3F /* Screenshots */,
 				C84B9D5F25BA22BD003DF4A7 /* Frameworks */,
 				C84B9D4025BA1A32003DF4A7 /* Products */,
 			);
@@ -229,6 +247,7 @@
 				C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */,
 				C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */,
 				C8F3A21D280F52E900C1DC3F /* WidgetPreview.app */,
+				C8F3A23D280F568B00C1DC3F /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +338,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C8F3A23E280F568B00C1DC3F /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				C8F3A23F280F568B00C1DC3F /* Screenshots.swift */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +423,24 @@
 			productReference = C8F3A21D280F52E900C1DC3F /* WidgetPreview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8F3A23C280F568B00C1DC3F /* Screenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F3A245280F568B00C1DC3F /* Build configuration list for PBXNativeTarget "Screenshots" */;
+			buildPhases = (
+				C8F3A239280F568B00C1DC3F /* Sources */,
+				C8F3A23A280F568B00C1DC3F /* Frameworks */,
+				C8F3A23B280F568B00C1DC3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F3A244280F568B00C1DC3F /* PBXTargetDependency */,
+			);
+			name = Screenshots;
+			productName = Screenshots;
+			productReference = C8F3A23D280F568B00C1DC3F /* Screenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -416,6 +461,10 @@
 					};
 					C8F3A21C280F52E900C1DC3F = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					C8F3A23C280F568B00C1DC3F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = C84B9D3E25BA1A32003DF4A7;
 					};
 				};
 			};
@@ -439,6 +488,7 @@
 				C84B9D5D25BA22BD003DF4A7 /* WidgetsExtension */,
 				C84B9D8325BA24BB003DF4A7 /* IntentHandler */,
 				C8F3A21C280F52E900C1DC3F /* WidgetPreview */,
+				C8F3A23C280F568B00C1DC3F /* Screenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -474,6 +524,13 @@
 			files = (
 				C8F3A227280F52EA00C1DC3F /* Preview Assets.xcassets in Resources */,
 				C8F3A224280F52EA00C1DC3F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F3A23B280F568B00C1DC3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +613,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8F3A239280F568B00C1DC3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F3A240280F568B00C1DC3F /* Screenshots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -568,6 +633,11 @@
 			isa = PBXTargetDependency;
 			target = C84B9D8325BA24BB003DF4A7 /* IntentHandler */;
 			targetProxy = C84B9D8B25BA24BB003DF4A7 /* PBXContainerItemProxy */;
+		};
+		C8F3A244280F568B00C1DC3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84B9D3E25BA1A32003DF4A7 /* PhoneWidget */;
+			targetProxy = C8F3A243280F568B00C1DC3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -880,6 +950,44 @@
 			};
 			name = Release;
 		};
+		C8F3A246280F568B00C1DC3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FS696NSBK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiliopelaez.Screenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhoneWidget;
+			};
+			name = Debug;
+		};
+		C8F3A247280F568B00C1DC3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FS696NSBK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiliopelaez.Screenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhoneWidget;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -924,6 +1032,15 @@
 			buildConfigurations = (
 				C8F3A228280F52EA00C1DC3F /* Debug */,
 				C8F3A229280F52EA00C1DC3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F3A245280F568B00C1DC3F /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F3A246280F568B00C1DC3F /* Debug */,
+				C8F3A247280F568B00C1DC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
