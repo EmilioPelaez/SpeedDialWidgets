@@ -29,8 +29,11 @@ struct WidgetEntry: TimelineEntry {
 			.split(separator: " ")
 			.compactMap { $0.first }
 			.map { String($0) }
+			.prefix(2)
 			.joined()
 			.uppercased()
+			.nilOnEmpty
+		?? "N/A"
 	}
 	
 	static func emptyEntryWithConfiguration(_ level: ConfigurationLevel) -> WidgetEntry {
@@ -47,6 +50,15 @@ struct WidgetEntry: TimelineEntry {
 	static let placeholderSmall = WidgetEntry(date: Date(),
 																						name: "Emilio Peláez",
 																						image: Image("Avatar"),
+																						connection: .phone,
+																						background: Background.all[7],
+																						urlString: "example",
+																						size: .small,
+																						configurationLevel: .complete)
+	
+	static let placeholderNoImage = WidgetEntry(date: Date(),
+																						name: "Emilio Peláez",
+																						image: nil,
 																						connection: .phone,
 																						background: Background.all[7],
 																						urlString: "example",

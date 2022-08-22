@@ -13,7 +13,7 @@ struct LockScreenWidgetProvider: IntentTimelineProvider {
 	let imageSize: CGFloat
 	
 	func placeholder(in context: Context) -> WidgetEntry {
-		.placeholderSmall
+		.placeholderNoImage
 	}
 	
 	func getSnapshot(for configuration: SimpleConfigurationIntent, in context: Context, completion: @escaping (WidgetEntry) -> ()) {
@@ -21,7 +21,7 @@ struct LockScreenWidgetProvider: IntentTimelineProvider {
 			return completion(demo)
 		}
 		guard !context.isPreview && configuration.altName != "Demo" else {
-			return completion(.placeholderSmall)
+			return completion(.placeholderNoImage)
 		}
 		guard let contact = configuration.contact, let contactId = contact.identifier else {
 			return completion(WidgetEntry.emptyEntryWithConfiguration(.missingContact))
@@ -32,7 +32,7 @@ struct LockScreenWidgetProvider: IntentTimelineProvider {
 		let processedAddress = processedString(address, for: configuration.connection)
 		let entry = WidgetEntry(date: Date(),
 														name: configuration.altName?.nilOnEmpty ?? contact.displayString,
-														image: imageForContactId(contactId, squared: true),
+														image: CNContact.imageForContactId(contactId, imageSize: imageSize, squared: true),
 														connection: configuration.connection,
 														background: .all[0],
 														urlString: [configuration.connection.scheme, processedAddress].joined(),
@@ -45,25 +45,6 @@ struct LockScreenWidgetProvider: IntentTimelineProvider {
 		getSnapshot(for: configuration, in: context) {
 			let timeline = Timeline(entries: [$0], policy: .never)
 			completion(timeline)
-		}
-	}
-	
-	private func imageForContactId(_ identifier: String, squared: Bool) -> Image? {
-		func resized(_ image: UIImage?) -> UIImage? {
-			squared ? image?.square(imageSize) : image?.resized(toFit: CGSize(side: imageSize))
-		}
-		do {
-			let keys = [CNContactThumbnailImageDataKey].map { $0 as CNKeyDescriptor }
-			let predicate: NSPredicate = CNContact.predicateForContacts(withIdentifiers: [identifier])
-			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
-			guard let contact = contacts.first else { return nil }
-			return contact.thumbnailImageData
-				.flatMap(UIImage.init)
-				.flatMap { resized($0) }
-				.map(Image.init)
-		} catch {
-			print(error)
-			return nil
 		}
 	}
 	
