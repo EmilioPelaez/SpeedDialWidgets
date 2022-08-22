@@ -11,6 +11,10 @@ import WidgetKit
 @main
 struct Widgets: WidgetBundle {
 	var body: some Widget {
-		PhoneWidget()
+		if #available(iOSApplicationExtension 16.0, *) {
+			return WidgetBundleBuilder.buildBlock(PhoneWidget(), LockScreenWidget())
+		} else {
+			return PhoneWidget()
+		}
 	}
 }

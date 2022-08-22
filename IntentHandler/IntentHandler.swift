@@ -13,6 +13,9 @@ class IntentHandler: INExtension {
 		if intent is ConfigurationIntent {
 			return ConfigurationIntentHandler()
 		}
+		if intent is SimpleConfigurationIntent {
+			return SimpleConfigurationIntentHandler()
+		}
 		
 		return self
 	}

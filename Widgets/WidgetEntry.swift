@@ -24,6 +24,15 @@ struct WidgetEntry: TimelineEntry {
 	let size: ImageSize
 	let configurationLevel: ConfigurationLevel
 	
+	var initials: String {
+		name
+			.split(separator: " ")
+			.compactMap { $0.first }
+			.map { String($0) }
+			.joined()
+			.uppercased()
+	}
+	
 	static func emptyEntryWithConfiguration(_ level: ConfigurationLevel) -> WidgetEntry {
 		WidgetEntry(date: Date(),
 								name: "Emilio Peláez",
