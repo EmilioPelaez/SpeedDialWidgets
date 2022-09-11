@@ -8,12 +8,22 @@
 import XCTest
 
 class Screenshots: XCTestCase {
-	func testExample() throws {
+	func testLockScreen() throws {
+		let app = XCUIApplication(bundleIdentifier: "com.emiliopelaez.WidgetPreview")
+		app.launchArguments = ["LockScreenWidgets"]
+		setupSnapshot(app)
+		app.launch()
 		
+		snapshot("0_LockScreen")
+	}
+	
+	
+	func testWidgets() throws {
 		let app = XCUIApplication(bundleIdentifier: "com.emiliopelaez.WidgetPreview")
 		setupSnapshot(app)
 		app.launch()
 		
-		snapshot("0_Widgets")
+		snapshot("1_Widgets")
 	}
+	
 }

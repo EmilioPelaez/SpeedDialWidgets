@@ -9,6 +9,7 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+@available(iOS 16.0, *)
 @available(iOSApplicationExtension 16.0, *)
 struct LockScreenWidget: Widget {
 	var body: some WidgetConfiguration {

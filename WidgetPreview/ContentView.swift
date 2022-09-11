@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	var lockScreenWidgets: Bool {
+		return ProcessInfo.processInfo.arguments.contains("LockScreenWidgets")
+	}
+	
 	var body: some View {
-		WidgetPreview()
+		if lockScreenWidgets {
+			LockScreenView()
+		} else {
+			WidgetPreview()
+		}
 	}
 }
 
