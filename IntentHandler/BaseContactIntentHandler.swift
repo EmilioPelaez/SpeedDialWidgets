@@ -18,9 +18,13 @@ class BaseContactIntentHandler: NSObject {
 		do {
 			let keys = [CNContactGivenNameKey, CNContactMiddleNameKey, CNContactFamilyNameKey, CNContactNicknameKey, CNContactTypeKey, CNContactOrganizationNameKey]
 				.map { $0 as CNKeyDescriptor }
-			let containerId = CNContactStore().defaultContainerIdentifier()
-			let predicate: NSPredicate = CNContact.predicateForContactsInContainer(withIdentifier: containerId)
-			let contacts = try CNContactStore().unifiedContacts(matching: predicate, keysToFetch: keys)
+			let store = CNContactStore()
+			let containers = try store.containers(matching: nil)
+			let contacts = try containers.flatMap {
+				let containerId = $0.identifier
+				let predicate: NSPredicate = CNContact.predicateForContactsInContainer(withIdentifier: containerId)
+				return try store.unifiedContacts(matching: predicate, keysToFetch: keys)
+			}
 			
 			let results = contacts
 				.filter { !$0.displayName.isEmpty }
