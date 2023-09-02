@@ -37,10 +37,10 @@
 		C84B9D6925BA22BE003DF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84B9D6825BA22BE003DF4A7 /* Assets.xcassets */; };
 		C84B9D6B25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D6C25BA22BE003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
-		C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D5E25BA22BD003DF4A7 /* WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C84B9D8625BA24BB003DF4A7 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84B9D8525BA24BB003DF4A7 /* Intents.framework */; };
 		C84B9D8925BA24BB003DF4A7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D8825BA24BB003DF4A7 /* IntentHandler.swift */; };
-		C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C84B9D8425BA24BB003DF4A7 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */; };
 		C84CD84228B2E62100597BBE /* LockScreenWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84128B2E62100597BBE /* LockScreenWidgetView.swift */; };
@@ -108,16 +108,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C84B9D7325BA22BE003DF4A7 /* Embed App Extensions */ = {
+		C84B9D7325BA22BE003DF4A7 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed App Extensions */,
-				C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed App Extensions */,
+				C84B9D6F25BA22BE003DF4A7 /* WidgetsExtension.appex in Embed Foundation Extensions */,
+				C84B9D8D25BA24BB003DF4A7 /* IntentHandler.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -404,7 +404,7 @@
 				C84B9D3B25BA1A32003DF4A7 /* Sources */,
 				C84B9D3C25BA1A32003DF4A7 /* Frameworks */,
 				C84B9D3D25BA1A32003DF4A7 /* Resources */,
-				C84B9D7325BA22BE003DF4A7 /* Embed App Extensions */,
+				C84B9D7325BA22BE003DF4A7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -495,8 +495,9 @@
 		C84B9D3725BA1A32003DF4A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					C84B9D3E25BA1A32003DF4A7 = {
 						CreatedOnToolsVersion = 12.3;
@@ -708,6 +709,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -742,6 +744,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -756,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -771,6 +774,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -805,6 +809,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -813,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
