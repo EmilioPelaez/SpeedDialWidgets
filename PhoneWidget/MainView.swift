@@ -46,16 +46,15 @@ struct MainView: View {
 					.transition(.opacity)
 			}
 		}
-		.onOpenURL(perform: { url in
-			print(url)
-			UIApplication.shared.open(url)
+		.onOpenURL { url in
 			if Connection.call.contains(where: { $0.matches(url) }) {
 				self.showMessage = .call
 			} else if Connection.messaging.contains(where: { $0.matches(url) }) {
 				self.showMessage = .message
 			}
-		})
-		.onChange(of: scenePhase, perform: { value in
+			UIApplication.shared.open(url)
+		}
+		.onChange(of: scenePhase) { value in
 			self.authorization = CNContactStore.authorizationStatus(for: .contacts)
 			if self.showMessage == .none, value == .active {
 				showRateAlert()
@@ -67,7 +66,7 @@ struct MainView: View {
 			} else if self.showMessage == .message, value == .background {
 				self.showMessage = .none
 			}
-		})
+		}
 	}
 	
 	func showRateAlert() {
