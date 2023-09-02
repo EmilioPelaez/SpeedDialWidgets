@@ -39,7 +39,8 @@ struct FullImageWidgetView : View {
 			.foregroundColor(.white)
 			.background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
 		}
-		.containerBackground(for: .widget) {
+		.widgetBackground {
+			EmptyView()
 		}
 	}
 }

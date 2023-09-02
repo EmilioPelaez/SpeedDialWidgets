@@ -45,7 +45,7 @@ struct CircleImageWidgetView : View {
 			.padding()
 			.foregroundColor(.white)
 		}
-		.containerBackground(for: .widget) {
+		.widgetBackground {
 			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 		}
 	}

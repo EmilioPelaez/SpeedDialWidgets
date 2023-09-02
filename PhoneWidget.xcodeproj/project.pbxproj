@@ -56,6 +56,8 @@
 		C865EC4025C727B9005E5A87 /* EmptyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */; };
 		C865EC4525C73B5E005E5A87 /* AppSwitchingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */; };
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
+		C8C60FC22AA369E0001B7546 /* WidgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */; };
+		C8C60FC32AA369E0001B7546 /* WidgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */; };
 		C8EACA82262CB3B9002FDC7C /* KernelDirectoryUI in Frameworks */ = {isa = PBXBuildFile; productRef = C8EACA81262CB3B9002FDC7C /* KernelDirectoryUI */; };
 		C8EB550B28B34B0700D078C1 /* CNContact+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */; };
 		C8EB550C28B34B0700D078C1 /* CNContact+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */; };
@@ -170,6 +172,7 @@
 		C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAvatar.swift; sourceTree = "<group>"; };
 		C865EC4425C73B5E005E5A87 /* AppSwitchingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitchingAlertView.swift; sourceTree = "<group>"; };
 		C8BA455025BE1A7100C88F9A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBackground.swift; sourceTree = "<group>"; };
 		C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CNContact+Image.swift"; sourceTree = "<group>"; };
 		C8EB550D28B34CBF00D078C1 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
 		C8F3A21D280F52E900C1DC3F /* WidgetPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +250,7 @@
 				C865EC3A25C7274A005E5A87 /* ImageFill.swift */,
 				C865EC3F25C727B9005E5A87 /* EmptyAvatar.swift */,
 				C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */,
+				C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -613,6 +617,7 @@
 				C82FDE1A25BA4DEA00B6D5D2 /* ConfigurationView.swift in Sources */,
 				C837D06F25BA3B7300FB1D48 /* RectangleImageWidgetView.swift in Sources */,
 				C837D08625BA3D7100FB1D48 /* FullImageWidgetView.swift in Sources */,
+				C8C60FC22AA369E0001B7546 /* WidgetBackground.swift in Sources */,
 				C865EC3B25C7274A005E5A87 /* ImageFill.swift in Sources */,
 				C84B9D6625BA22BD003DF4A7 /* Widgets.swift in Sources */,
 				C82FDE0F25BA460000B6D5D2 /* CGSize+Utilities.swift in Sources */,
@@ -660,6 +665,7 @@
 				C8F3A222280F52E900C1DC3F /* ContentView.swift in Sources */,
 				C8F3A232280F532700C1DC3F /* CGSize+Utilities.swift in Sources */,
 				C84CD84C28B2EE0600597BBE /* LockScreenWidgetProvider.swift in Sources */,
+				C8C60FC32AA369E0001B7546 /* WidgetBackground.swift in Sources */,
 				C8F3A236280F534B00C1DC3F /* Widgets.intentdefinition in Sources */,
 				C8EB551028B34CE400D078C1 /* WidgetEntry.swift in Sources */,
 				C8F3A238280F537B00C1DC3F /* WidgetPreview.swift in Sources */,
