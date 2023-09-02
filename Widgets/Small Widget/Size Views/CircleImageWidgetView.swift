@@ -24,7 +24,6 @@ struct CircleImageWidgetView : View {
 	
 	var body: some View {
 		ZStack {
-			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 			VStack(spacing: 4) {
 				Color.clear
 					.overlay(imageSection)
@@ -45,6 +44,9 @@ struct CircleImageWidgetView : View {
 			}
 			.padding()
 			.foregroundColor(.white)
+		}
+		.containerBackground(for: .widget) {
+			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 		}
 	}
 }

@@ -13,7 +13,6 @@ struct RectangleImageWidgetView : View {
 	
 	var body: some View {
 		ZStack {
-			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 			VStack(alignment: .leading, spacing: 4) {
 				Group {
 					if let image = entry.image {
@@ -40,6 +39,9 @@ struct RectangleImageWidgetView : View {
 			}
 			.padding()
 			.foregroundColor(.white)
+		}
+		.containerBackground(for: .widget) {
+			LinearGradient(gradient: entry.background.gradient, startPoint: .top, endPoint: .bottom)
 		}
 	}
 }

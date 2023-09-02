@@ -19,25 +19,27 @@ struct FullImageWidgetView : View {
 						.resizable()
 						.aspectRatio(contentMode: .fill)
 				)
-				VStack(alignment: .leading, spacing: 2) {
-					Text(entry.name)
-						.lineLimit(2)
-						.minimumScaleFactor(0.5)
-						.font(.headline)
-					HStack(spacing: 4) {
-						entry.connection.image
-						Text(entry.connection.name)
-							.lineLimit(1)
-					}
-					.font(.footnote.bold())
-					.opacity(0.5)
+			VStack(alignment: .leading, spacing: 2) {
+				Text(entry.name)
+					.lineLimit(2)
+					.minimumScaleFactor(0.5)
+					.font(.headline)
+				HStack(spacing: 4) {
+					entry.connection.image
+					Text(entry.connection.name)
+						.lineLimit(1)
 				}
-				.frame(maxWidth: .infinity, alignment: .bottomLeading)
-				.padding(.horizontal, 8)
-				.padding(.bottom, 8)
-				.padding(.top, 30)
-				.foregroundColor(.white)
-				.background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
+				.font(.footnote.bold())
+				.opacity(0.5)
+			}
+			.frame(maxWidth: .infinity, alignment: .bottomLeading)
+			.padding(.horizontal, 8)
+			.padding(.bottom, 8)
+			.padding(.top, 30)
+			.foregroundColor(.white)
+			.background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
+		}
+		.containerBackground(for: .widget) {
 		}
 	}
 }
