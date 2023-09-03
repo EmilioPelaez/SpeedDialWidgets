@@ -44,11 +44,8 @@
 		C84B9D9425BA24DC003DF4A7 /* Widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D6725BA22BD003DF4A7 /* Widgets.intentdefinition */; };
 		C84B9D9925BA24F2003DF4A7 /* ConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B9D9825BA24F2003DF4A7 /* ConfigurationIntentHandler.swift */; };
 		C84CD84228B2E62100597BBE /* LockScreenWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84128B2E62100597BBE /* LockScreenWidgetView.swift */; };
-		C84CD84328B2E62100597BBE /* LockScreenWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84128B2E62100597BBE /* LockScreenWidgetView.swift */; };
 		C84CD84528B2EBA800597BBE /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84428B2EBA800597BBE /* LockScreenWidget.swift */; };
-		C84CD84628B2EBA800597BBE /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84428B2EBA800597BBE /* LockScreenWidget.swift */; };
 		C84CD84B28B2EE0600597BBE /* LockScreenWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84A28B2EE0600597BBE /* LockScreenWidgetProvider.swift */; };
-		C84CD84C28B2EE0600597BBE /* LockScreenWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84A28B2EE0600597BBE /* LockScreenWidgetProvider.swift */; };
 		C84CD84E28B2F41E00597BBE /* BaseContactIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84D28B2F41E00597BBE /* BaseContactIntentHandler.swift */; };
 		C84CD85028B2F4CC00597BBE /* SimpleConfigurationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84F28B2F4CC00597BBE /* SimpleConfigurationIntentHandler.swift */; };
 		C865EC1F25C2CB2E005E5A87 /* Connection+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837D05E25BA376200FB1D48 /* Connection+UI.swift */; };
@@ -58,6 +55,7 @@
 		C8BA455125BE1A7100C88F9A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA455025BE1A7100C88F9A /* AboutView.swift */; };
 		C8C60FC22AA369E0001B7546 /* WidgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */; };
 		C8C60FC32AA369E0001B7546 /* WidgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C60FC12AA369E0001B7546 /* WidgetBackground.swift */; };
+		C8C60FC42AA3E911001B7546 /* LockScreenWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CD84A28B2EE0600597BBE /* LockScreenWidgetProvider.swift */; };
 		C8EACA82262CB3B9002FDC7C /* KernelDirectoryUI in Frameworks */ = {isa = PBXBuildFile; productRef = C8EACA81262CB3B9002FDC7C /* KernelDirectoryUI */; };
 		C8EB550B28B34B0700D078C1 /* CNContact+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */; };
 		C8EB550C28B34B0700D078C1 /* CNContact+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB550A28B34B0700D078C1 /* CNContact+Image.swift */; };
@@ -657,14 +655,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8EB550F28B34CBF00D078C1 /* LockScreenView.swift in Sources */,
+				C8C60FC42AA3E911001B7546 /* LockScreenWidgetProvider.swift in Sources */,
 				C8F3A22B280F52FA00C1DC3F /* RectangleImageWidgetView.swift in Sources */,
 				C8EB550C28B34B0700D078C1 /* CNContact+Image.swift in Sources */,
 				C8F3A22C280F52FA00C1DC3F /* ConfigurationView.swift in Sources */,
-				C84CD84628B2EBA800597BBE /* LockScreenWidget.swift in Sources */,
 				C8F3A235280F532700C1DC3F /* EmptyAvatar.swift in Sources */,
 				C8F3A222280F52E900C1DC3F /* ContentView.swift in Sources */,
 				C8F3A232280F532700C1DC3F /* CGSize+Utilities.swift in Sources */,
-				C84CD84C28B2EE0600597BBE /* LockScreenWidgetProvider.swift in Sources */,
 				C8C60FC32AA369E0001B7546 /* WidgetBackground.swift in Sources */,
 				C8F3A236280F534B00C1DC3F /* Widgets.intentdefinition in Sources */,
 				C8EB551028B34CE400D078C1 /* WidgetEntry.swift in Sources */,
@@ -675,7 +672,6 @@
 				C8EB551128B34D1400D078C1 /* String+Nil.swift in Sources */,
 				C8F3A220280F52E900C1DC3F /* WidgetPreviewApp.swift in Sources */,
 				C8F3A233280F532700C1DC3F /* ImageFill.swift in Sources */,
-				C84CD84328B2E62100597BBE /* LockScreenWidgetView.swift in Sources */,
 				C8F3A22E280F52FA00C1DC3F /* FullImageWidgetView.swift in Sources */,
 				C8F3A230280F531000C1DC3F /* Connection+UI.swift in Sources */,
 			);

@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "KernelDirectoryUI",
-        "repositoryURL": "https://github.com/EmilioPelaez/KernelDirectoryUI",
-        "state": {
-          "branch": null,
-          "revision": "d36e7b4234ade7fd5b2779eae0cad8fa54dae532",
-          "version": "0.0.6"
-        }
-      },
-      {
-        "package": "RESTClient",
-        "repositoryURL": "https://github.com/EmilioPelaez/RESTClient",
-        "state": {
-          "branch": null,
-          "revision": "36d6cbe4bc0a780ae472ccc793612fac642ff6fb",
-          "version": "0.9.2"
-        }
+  "pins" : [
+    {
+      "identity" : "kerneldirectoryui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EmilioPelaez/KernelDirectoryUI",
+      "state" : {
+        "revision" : "d36e7b4234ade7fd5b2779eae0cad8fa54dae532",
+        "version" : "0.0.6"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "restclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EmilioPelaez/RESTClient",
+      "state" : {
+        "revision" : "36d6cbe4bc0a780ae472ccc793612fac642ff6fb",
+        "version" : "0.9.2"
+      }
+    }
+  ],
+  "version" : 2
 }
